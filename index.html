@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+        <header class="header pb-8 relative">
+            <nav class="sticky top-0 z-30 flex flex-row items-center justify-between header--nav bg-transparent">
+                <div class="flex items-center space-x-4 md:space-x-8 flex-row">
+                    <img src="./assets/images/fibrtix-white.png" alt="fibrtix logo" class="w-[150px] h-[39px] logo" />
+                    <ul class="hidden md:flex space-x-8 font-semibold text-white gap-[10px]">
+                        <li><a href="#" class="hover:text-[#ffc522]">Beranda</a></li>
+                        <li><a href="#" class="hover:text-[#ffc522]">Events</a></li>
+                        <li><a href="#" class="hover:text-[#ffc522]">Pakai FibrTIX</a></li>
+                        <li><a href="#" class="hover:text-[#ffc522]">Cara Kerja</a></li>
+                        <li><a href="#" class="hover:text-[#ffc522]">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a
+                        href="#"
+                        class="bg-white transition btn-nav"
+                    >
+                        Buat Event
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none" aria-label="Open Menu">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden fixed inset-0 bg-black bg-opacity-80 z-40 flex flex-col items-center justify-center space-y-8 font-semibold text-white text-lg hidden">
+                <button id="close-mobile-menu" class="absolute top-6 right-6 text-white text-3xl">&times;</button>
+                <a href="#" class="hover:text-[#ffc522]">Beranda</a>
+                <a href="#" class="hover:text-[#ffc522]">Events</a>
+                <a href="#" class="hover:text-[#ffc522]">Pakai FibrTIX</a>
+                <a href="#" class="hover:text-[#ffc522]">Cara Kerja</a>
+                <a href="#" class="hover:text-[#ffc522]">Hubungi Kami</a>
+                <a href="#" class="bg-white text-[#2dc2b7] font-bold py-2 px-6 rounded-lg shadow hover:bg-[#e0fdfc] transition text-base">Buat Event</a>
+            </div>
+
+            <section class="flex flex-row items-center header--content">
+                <div class="flex-1 text-left z-10 w-full max-w-xl flex flex-col gap-[40px] pt-[40px]">
+                    <div class="flex flex-col">
+                        <h1 class="mb-2 leading-tight header--content--content-left">
+                            Solusi Ticketing
+                        </h1>
+                        <h1 class="header--content--content-left--anti-down">
+                            ANTI DOWN
+                        </h1>
+                        <p class="mb-6 header--content--content-left--paragraph">
+                            Solusi digital pengelolaan tiket dan antrian yang dirancang untuk mempermudah proses pemesanan, validasi, dan manajemen pengunjung secara efisien dan modern.
+                        </p>
+                    </div>
+                    <a
+                        href="#"
+                        class="try-fibrtix"
+                    >
+                        Pelajari FibrTIX
+                    </a>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <img
+                        src="./assets/images/app-screenshoot.png"
+                        alt="FibrTIX Apps Preview"
+                        class="absolute z-10 top-[70px] right-0 w-[300px] lg:w-auto"
+                    />
+                </div>
+            </section>
+        </header>
+        <section class="events mb-10">
+            <div class="text-center events--header">
+                <h2 class="events--title">Events</h2>
+                <p class="events--description text-[30px] lg:text-[48px]">Temukan Tiketmu</p>
+            </div>
+
+            <div class="events--grid">
+                <div class="events--card">
+                    <img src="./assets/images/event-banner.png" alt="Event 1" class="events--card--image w-full rounded-lg w-auto h-[250px] z-[8] shadow-lg" />
+                    <div class="relative card bg-white p-4 -mt-[80px] z-10 rounded-lg mx-auto text-left">
+                        <p class="text-xs">
+                            <span class="text-secondary font-normal">Start from </span> <span class="font-medium text-error">
+                                FREE
+                            </span>
+                        </p>
+    
+                        <div class="mt-1 mb-2">
+                            <p class="text-2xl font-semibold text-primary line-clamp-2 text-ellipsis overflow-hidden mb-1 leading-[1.2]">
+                                Ngemil in Cinema Tadabbur
+                            </p>
+    
+                            <p class="text-xs text-secondary font-normal">
+                                di CGV Depok Mall
+                            </p>
+                        </div>
+    
+                        <div class="flex">
+                            <div class="card__info-date">
+    
+                                <p class="text-xs !text-[#393D4E] font-normal">
+                                    21 Desember 2025
+                                </p>
+                                <p class="text-xs !text-[#393D4E] font-normal">
+                                    19:00 - 21:00 WIB
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="events--card">
+                    <img src="./assets/images/event-banner.png" alt="Event 1" class="events--card--image w-full rounded-lg w-auto h-[250px] z-[8] shadow-lg" />
+                    <div class="relative card bg-white p-4 -mt-[80px] z-10 rounded-lg mx-auto text-left">
+                        <p class="text-xs">
+                            <span class="text-secondary font-normal">Start from </span> <span class="font-medium text-error">
+                                FREE
+                            </span>
+                        </p>
+    
+                        <div class="mt-1 mb-2">
+                            <p class="text-2xl font-semibold text-primary line-clamp-2 text-ellipsis overflow-hidden mb-1 leading-[1.2]">
+                                Ngemil in Cinema Tadabbur
+                            </p>
+    
+                            <p class="text-xs text-secondary font-normal">
+                                di CGV Depok Mall
+                            </p>
+                        </div>
+    
+                        <div class="flex">
+                            <div class="card__info-date">
+    
+                                <p class="text-xs !text-[#393D4E] font-normal">
+                                    21 Desember 2025
+                                </p>
+                                <p class="text-xs !text-[#393D4E] font-normal">
+                                    19:00 - 21:00 WIB
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="events--card">
+                    <img src="./assets/images/event-banner.png" alt="Event 1" class="events--card--image w-full rounded-lg w-auto h-[250px] z-[8] shadow-lg" />
+                    <div class="relative card bg-white p-4 -mt-[80px] z-10 rounded-lg mx-auto text-left">
+                        <p class="text-xs">
+                            <span class="text-secondary font-normal">Start from </span> <span class="font-medium text-error">
+                                FREE
+                            </span>
+                        </p>
+    
+                        <div class="mt-1 mb-2">
+                            <p class="text-2xl font-semibold text-primary line-clamp-2 text-ellipsis overflow-hidden mb-1 leading-[1.2]">
+                                Ngemil in Cinema Tadabbur
+                            </p>
+    
+                            <p class="text-xs text-secondary font-normal">
+                                di CGV Depok Mall
+                            </p>
+                        </div>
+    
+                        <div class="flex">
+                            <div class="card__info-date">
+    
+                                <p class="text-xs !text-[#393D4E] font-normal">
+                                    21 Desember 2025
+                                </p>
+                                <p class="text-xs !text-[#393D4E] font-normal">
+                                    19:00 - 21:00 WIB
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="contact-mid">
+            <div class="contact-mid--container">
+                <div class="contact-mid--content">
+                    <h2 class="contact-mid--title text-[33px] lg:text-[36px]">Buat event tapi Ticketing <span>LEMOT</span>?</h2>
+                    <h2 class="contact-mid--title text-[33px] lg:text-[36px]">Bahkan sampai <span>DOWN</span>?</h2>
+                    <a href="#" class="try-fibrtix">
+                        Hubungi FibrTix
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="events !mt-1">
+            <div class="text-center events--header">
+                <h2 class="events--title">Why Choose Us</h2>
+                <p class="events--description text-[30px] lg:text-[48px]">Mengapa FibrTix</p>
+            </div>
+        </section>
+        <section class="grid-2">
+            <img src="./assets/images/strong.png" alt="Why Choose Us 1" class="w-full" />
+            <div class="flex flex-col justify-center px-6 lg:px-0 grid-2--content">
+                <h3 class="lg:text-[32px] text-[26px] font-bold mb-4">Server <span class="text-primary">KUAT</span> Anti <span class="text-error">DOWN</span></h3>
+                <p class="text-lg text-[#677487] mb-6">
+                    FibrTIX hadir sebagai jawaban untuk penyelenggara event, tempat wisata, layanan publik, serta komunitas yang membutuhkan sistem ticketing anti-down dan praktis tanpa perlu infrastruktur yang rumit.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="card-button flex flex-col bg-[#E34819] text-center">
+                        <p class="lg:text-[41px] text-[25px] font-bold text-white">65.000+</p>
+                        <p class="lg:text-2xl text-xl text-white">Akses User</p>
+                    </div>
+                    <div class="card-button flex flex-col bg-[#008080] text-center">
+                        <p class="lg:text-[41px] text-[25px] font-bold text-white">65.000+</p>
+                        <p class="lg:text-2xl text-xl text-white">Akses User</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenuBtn = document.getElementById('close-mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+        // Optional: close menu when clicking outside or on a link
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu || e.target.tagName === 'A') {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+        // Header nav background on scroll
+        const headerNav = document.querySelector('.header--nav');
+        const logoImg = document.querySelector('.header--nav img');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                headerNav.classList.add('scrolled');
+                if (logoImg) logoImg.src = './assets/images/fibrtix-green.png'; 
+            } else {
+                headerNav.classList.remove('scrolled');
+                if (logoImg) logoImg.src = './assets/images/fibrtix-white.png';
+            }
+        });
+    </script>
+  </body>
+</html>

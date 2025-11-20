@@ -1,0 +1,318 @@
+.header {
+    background-image: url('../images/bg-header.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    height: 720px;
+
+    ul > li {
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+
+.header--nav {
+    padding: 40px 120px 16px 120px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.header--nav.scrolled {
+    background: #fff !important;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.06);
+}
+
+.header--nav.scrolled ul li a {
+    color: #008080 !important;
+}
+
+.header--nav.scrolled .btn-nav {
+    background: #008080 !important;
+    color: #fff !important;
+}
+
+.btn-nav {
+    padding: 16px 40px 16px 40px;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 20px;
+    color: #008080;
+    border-radius: 8px;
+}
+
+.header--content {
+    padding-top: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.header--content--content-left{
+    font-size: 60px;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-family: Montserrat;
+    line-height: 100%;
+    letter-spacing: 4px;
+}
+
+.header--content--content-left--anti-down {
+    font-style: italic;
+    color: #ff542e;
+    font-size: 86px;
+    font-family: Montserrat;
+    line-height: 90px;
+    letter-spacing: 0%;
+    /* White text-shadow border effect */
+    text-shadow:
+        2px 0 0 #fff,
+        -2px 0 0 #fff,
+        0 2px 0 #fff,
+        0 -2px 0 #fff,
+        1px 1px 0 #fff,
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff;
+    font-weight: 800;
+}
+
+.header--content--content-left--paragraph {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    margin-top: 18px;
+}
+
+.try-fibrtix {
+    width: 234px;
+    height: 60px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    opacity: 1;
+    border-radius: 8px;
+    background: #FFFFFF;
+    color: #008080;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.events--header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url('../images/vector-event.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.events--title {
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 16%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.events {
+    padding: 40px 120px 16px 120px;
+    margin-top: 120px;
+    font-family: Poppins;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.events--grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.events--card {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.events--card--image {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    width: calc(100% - 16px);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.05);
+}
+
+.card__info-date {
+    border: 1px solid #D4DBEA;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.text-error {
+    color: #F04438;
+}
+
+.text-secondary {
+    color: #6B7280;
+}   
+
+.text-primary {
+    color: #008080;
+}
+
+.contact-mid {
+    background: url('../images/bg-section-mid.png');
+    background-repeat: no-repeat;
+    height: 288px;
+}
+
+.contact-mid--container {
+    display: flex;
+    justify-content: right;
+}
+
+.contact-mid--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    margin-top: 4rem;
+    margin-right: 6rem;
+}
+
+.contact-mid--title {
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: right;
+    color: #FFFFFF;
+
+    span {
+        margin-right: 10px;
+        font-style: italic;
+        color: #ff542e;
+        font-weight: 700;
+        font-family: Poppins;
+        line-height: 100%;
+        letter-spacing: 0%;
+        /* White text-shadow border effect */
+        text-shadow:
+            2px 0 0 #fff,
+            -2px 0 0 #fff,
+            0 2px 0 #fff,
+            0 -2px 0 #fff,
+            1px 1px 0 #fff,
+            -1px -1px 0 #fff,
+            1px -1px 0 #fff,
+            -1px 1px 0 #fff;
+        font-weight: 800;
+
+    }
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 40px 120px 16px 120px;
+    margin-bottom: 80px;
+}
+
+.grid-2--content {
+    font-family: Poppins;
+}
+
+.card-button {
+    padding-top: 16px;
+    padding-right: 8px;
+    padding-bottom: 16px;
+    padding-left: 8px;
+    opacity: 1;
+    border-radius: 16px;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    height: 600px;
+    border-bottom-right-radius: 48px;
+    border-bottom-left-radius: 48px;
+  }
+  .header--nav {
+    padding: 32px 32px 12px 32px;
+  }
+  .header--content {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .header--content--content-left {
+    font-size: 36px;
+    letter-spacing: 2%;
+  }
+  .header--content--content-left span {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+    .events--grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .events {
+        padding: 20px;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+  .header {
+    height: 420px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+  }
+  .header--nav {
+    padding: 16px 8px 8px 8px;
+  }
+  .header--content {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .header--content--content-left {
+    font-size: 22px;
+    letter-spacing: 1%;
+  }
+  .header--content--content-left span {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .btn-nav, .try-fibrtix {
+    font-size: 14px;
+    padding: 10px 18px;
+    height: auto;
+    width: auto;
+  }
+}
