@@ -62,8 +62,6 @@
     font-size: 86px;
     font-family: Montserrat;
     line-height: 90px;
-    letter-spacing: 0%;
-    /* White text-shadow border effect */
     text-shadow:
         2px 0 0 #fff,
         -2px 0 0 #fff,
@@ -98,10 +96,8 @@
     background: #FFFFFF;
     color: #008080;
     font-weight: 700;
-    font-style: bold;
     font-size: 20px;
     line-height: 100%;
-    letter-spacing: 0%;
 }
 
 .events--header {
@@ -308,6 +304,18 @@
     border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 51.56%, rgba(255, 255, 255, 0) 100%);
 }
 
+.mobile-menu-btn.scrolled {
+    color: black !important;
+}
+
+.app-preview {
+    position: absolute;
+    z-index: 10;
+    top: 70px;
+    right: 0;
+    width: auto;
+}
+
 @media (max-width: 1024px) {
   .header {
     height: 600px;
@@ -366,18 +374,18 @@
     background-image: url('../images/bg-header-mobile.png');
     min-height: 0;
     width: 100%;
-    height: auto;
+    height: 1100px;
   }
   .header--nav {
     padding: 16px 8px 8px 8px;
   }
   .header--content {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0;
   }
   .header--content--content-left {
-    font-size: 22px;
-    letter-spacing: 1%;
+    font-size: 52px;
   }
   .header--content--content-left span {
     font-size: 28px;
@@ -386,8 +394,6 @@
   .btn-nav, .try-fibrtix {
     font-size: 20px;
     padding: 16px 40px 16px 40px;
-    height: auto;
-    width: auto;
   }
 
   .contact-mid {
@@ -422,6 +428,10 @@
         width: 100%;
         justify-content: space-between;
         padding: 20px;
+    }
+
+    .app-preview {
+        top: auto;
     }
 
   .grid-item-1 { order: 1; }
