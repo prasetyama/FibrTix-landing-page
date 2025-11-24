@@ -16,11 +16,11 @@
                 <div class="flex items-center flex-row space-x-4 md:space-x-8 mobile-nav ">
                     <img src="./assets/images/fibrtix-white.png" alt="fibrtix logo" class="w-[150px] h-[39px] logo" />
                     <ul class="hidden md:hidden lg:flex space-x-8 font-semibold text-white gap-[10px]">
-                        <li><a href="#" class="hover:text-[#ffc522]">Beranda</a></li>
-                        <li><a href="#" class="hover:text-[#ffc522]">Events</a></li>
-                        <li><a href="#" class="hover:text-[#ffc522]">Pakai FibrTIX</a></li>
-                        <li><a href="#" class="hover:text-[#ffc522]">Cara Kerja</a></li>
-                        <li><a href="#" class="hover:text-[#ffc522]">Hubungi Kami</a></li>
+                        <li><a href="#home" class="hover:font-bold">Beranda</a></li>
+                        <li><a href="#events" class="hover:font-bold">Events</a></li>
+                        <li><a href="#choose-fibrtix" class="hover:font-bold">Pakai FibrTIX</a></li>
+                        <li><a href="#how-it-works" class="hover:font-bold">Cara Kerja</a></li>
+                        <li><a href="#" class="hover:font-bold">Hubungi Kami</a></li>
                     </ul>
                     <button id="mobile-menu-btn" class="lg:hidden text-white focus:outline-none mobile-menu-btn" aria-label="Open Menu">
                         <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -40,15 +40,16 @@
             <!-- Mobile menu -->
             <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-80 z-40 flex flex-col items-center justify-center space-y-8 font-semibold text-white text-lg">
                 <button id="close-mobile-menu" class="absolute top-6 right-6">&times;</button>
-                <a href="#" class="hover:text-[#ffc522]">Beranda</a>
-                <a href="#" class="hover:text-[#ffc522]">Events</a>
-                <a href="#" class="hover:text-[#ffc522]">Pakai FibrTIX</a>
-                <a href="#" class="hover:text-[#ffc522]">Cara Kerja</a>
+                <img src="./assets/images/fibrtix-green.png" alt="fibrtix logo" class="w-[150px] h-[39px] logo mt-[20px]" />
+                <a href="#home" class="hover:text-[#ffc522]">Beranda</a>
+                <a href="#events" class="hover:text-[#ffc522]">Events</a>
+                <a href="#choose-fibrtix" class="hover:text-[#ffc522]">Pakai FibrTIX</a>
+                <a href="#how-it-works" class="hover:text-[#ffc522]">Cara Kerja</a>
                 <a href="#" class="hover:text-[#ffc522]">Hubungi Kami</a>
                 <a href="#" class="btn-event-mobile">Buat Event</a>
             </div>
 
-            <section class="flex flex-row items-center header--content relative">
+            <section class="flex flex-row items-center header--content relative" id="home">
                 <div class="flex-1 text-left z-10 w-full max-w-xl flex flex-col gap-[40px] pt-[40px]">
                     <div class="flex flex-col">
                         <h1 class="mb-2 leading-tight header--content--content-left">
@@ -75,7 +76,7 @@
                 class="app-preview"
             />
         </header>
-        <section class="events mb-10">
+        <section class="events mb-10" id="events">
             <div class="text-center events--header">
                 <h2 class="events--title">Events</h2>
                 <p class="events--description text-[30px] lg:text-[48px]">Temukan Tiketmu</p>
@@ -192,7 +193,7 @@
                 </div>
             </div>
         </section>
-        <section class="events !mt-1">
+        <section class="events !mt-1" id="choose-fibrtix">
             <div class="text-center events--header">
                 <h2 class="events--title">Why Choose Us</h2>
                 <p class="events--description text-[30px] lg:text-[48px]">Mengapa FibrTix</p>
@@ -239,7 +240,7 @@
                 </div>
             </div>
         </section>
-        <section class="mt-1 how-to-work">
+        <section class="mt-1 how-to-work" id="how-it-works">
             <div class="text-center events--header">
                 <h2 class="events--title">How To Work</h2>
                 <p class="events--description text-[30px] lg:text-[48px] font-extrabold">Cara Kerja FibrTix</p>
@@ -266,7 +267,7 @@
                         <h4 class="footer--grid--item--title">FibrTIX</h4>
                         <ul class="footer--grid--item--list">
                             <li><a href="#">Tentang</a></li>
-                            <li><a href="#">Cara Kerja</a></li>
+                            <li><a href="#how-it-works">Cara Kerja</a></li>
                             <li><a href="#">Kontak</a></li>
                             <li><a href="#">Syarat & Ketentuan</a></li>
                             <li><a href="#">Kebijakan Privasi</a></li>
@@ -319,9 +320,24 @@
             mobileMenu.classList.remove('active');
             menuBtn.classList.remove('hidden');
         });
+        // Scroll to section on menu click
+        document.querySelectorAll('#mobile-menu a, .header--nav ul li a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                        mobileMenu.classList.remove('active');
+                        menuBtn.classList.remove('hidden');
+                    }
+                }
+            });
+        });
         // Optional: close menu when clicking outside or on a link
         mobileMenu.addEventListener('click', (e) => {
-            if (e.target === mobileMenu || e.target.tagName === 'A') {
+            if (e.target === mobileMenu) {
                 mobileMenu.classList.remove('active');
             }
         });
@@ -330,13 +346,41 @@
         const logoImg = document.querySelector('.header--nav img');
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         window.addEventListener('scroll', () => {
+            // Active menu logic
+            const sections = ['#events', '#choose-fibrtix', '#how-it-works'];
+            let activeSection = '';
+            for (const id of sections) {
+                const section = document.querySelector(id);
+                if (section) {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top <= 80 && rect.bottom > 80) {
+                        activeSection = id;
+                        break;
+                    }
+                }
+            }
+            document.querySelectorAll('.header--nav ul li a, #mobile-menu a').forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    if (href === activeSection) {
+                        link.classList.add('!font-bold');
+                        link.classList.add('!text-[#008080]');
+                    } else {
+                        link.classList.remove('!font-bold');
+                        link.classList.remove('!text-[#008080]');
+                    }
+                }
+            });
+            // Sticky nav and logo
             if (window.scrollY > 10) {
                 headerNav.classList.add('scrolled');
                 mobileMenuBtn.classList.add('scrolled');
+                closeMenuBtn.classList.add('scrolled');
                 if (logoImg) logoImg.src = './assets/images/fibrtix-green.png'; 
             } else {
                 headerNav.classList.remove('scrolled');
                 mobileMenuBtn.classList.remove('scrolled');
+                closeMenuBtn.classList.remove('scrolled');
                 if (logoImg) logoImg.src = './assets/images/fibrtix-white.png';
             }
         });
