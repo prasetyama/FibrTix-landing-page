@@ -1,5 +1,5 @@
 .header {
-    background-image: url('../images/bg-header.png');
+    background-image: url('../images/bg-header.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,6 +21,7 @@
     left: 0;
     z-index: 30;
     width: 100%;
+    font-family: Poppins;
 }
 
 .header--nav.scrolled {
@@ -179,9 +180,10 @@
 }
 
 .contact-mid {
-    background: url('../images/bg-section-mid.png');
+    background: url('../images/bg-section-mid.webp');
     background-repeat: no-repeat;
     height: 288px;
+    background-size: cover;
 }
 
 .contact-mid--container {
@@ -316,9 +318,9 @@
 .app-preview {
     position: absolute;
     z-index: 10;
-    top: 70px;
+    top: 100px;
     right: 0;
-    width: auto;
+    width: 45%;
 }
 
 #mobile-menu {
@@ -429,7 +431,7 @@
     height: 1080px;
     border-bottom-right-radius: 48px;
     border-bottom-left-radius: 48px;
-    background-image: url('../images/bg-header-tab.png');
+    background-image: url('../images/bg-header-tab.webp');
   }
   .header--nav {
     padding: 32px 32px 12px 32px;
@@ -476,8 +478,15 @@
     }
 
     .app-preview{
-        top: auto;
+        top: 50%;
         width: 80%;
+        right: 2%;
+    }
+
+    .contact-mid {
+        background: url('../images/bg-section-mid-tab.webp');
+        background-size: cover;
+
     }
 }
 
@@ -485,7 +494,7 @@
   .header {
     border-bottom-right-radius: 24px;
     border-bottom-left-radius: 24px;
-    background-image: url('../images/bg-header-mobile.png');
+    background-image: url('../images/bg-header-mobile.webp');
     min-height: 0;
     width: 100%;
     height: 1100px;
@@ -511,7 +520,7 @@
   }
 
   .contact-mid {
-    background: url('../images/bg-section-mid-mobile.png');
+    background: url('../images/bg-section-mid-mobile.webp');
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;

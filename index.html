@@ -17,7 +17,7 @@
   <body>
         <header class="header pb-8 relative">
             <nav class="sticky top-0 z-30 flex flex-col lg:flex-row md:flex-row items-center justify-between header--nav bg-transparent">
-                <div class="flex items-center flex-row space-x-4 md:space-x-8 mobile-nav ">
+                <div class="flex items-center flex-row space-x-4 md:space-x-8 mobile-nav gap-5 ">
                     <img src="./assets/images/fibrtix-white.png" alt="fibrtix logo" class="w-[150px] h-[39px] logo" />
                     <ul class="hidden md:hidden lg:flex space-x-8 font-semibold text-white gap-[10px]">
                         <li><a href="#home" class="hover:font-bold">Beranda</a></li>
@@ -77,7 +77,7 @@
                 </div>
             </section>
             <img
-                src="./assets/images/app-screenshoot.png"
+                src="./assets/images/app-screenshoot.webp"
                 alt="FibrTIX Apps Preview"
                 class="app-preview"
             />
@@ -307,7 +307,7 @@
             </section>
             <section class="choose-fibrtix">
                 <div class="grid-2 mb-10">
-                    <img src="./assets/images/strong.png" alt="Why Choose Us 1" class="w-full grid-item-1" />
+                    <img src="./assets/images/strong.webp" alt="Why Choose Us 1" class="lg:w-[90%] w-full grid-item-1" />
                     <div class="flex flex-col justify-center px-6 lg:px-0 grid-2--content grid-item-2">
                         <h3 class="lg:text-[32px] text-[26px] font-bold mb-4">Server <span class="text-primary">KUAT</span> Anti <span class="text-error">DOWN</span></h3>
                         <p class="text-lg text-[#677487] mb-6">
@@ -333,10 +333,10 @@
                             Buat dan kelola acara dengan cepat. Tambahkan detail event, atur harga tiket, dan mulai menjual hanya dalam beberapa langkah — tanpa perlu keahlian teknis.
                         </p>
                     </div>
-                    <img src="./assets/images/demo-app.png" alt="Why Choose Us 1" class="w-full grid-item-1"/>
+                    <img src="./assets/images/demo-app.webp" alt="Why Choose Us 1" class="w-full grid-item-1"/>
                 </div>
                 <div class="grid-2">
-                    <img src="./assets/images/dashboard.png" alt="Why Choose Us 1" class="w-full grid-item-1" />
+                    <img src="./assets/images/dashboard.webp" alt="Why Choose Us 1" class="w-full grid-item-1" />
                     <div class="flex flex-col justify-center px-6 lg:px-0 grid-2--content grid-item-2">
                         <img src="./assets/images/icon-dashboard.svg" class="w-[48px] h-[48px]" />
                         <h3 class="lg:text-[32px] text-[26px] font-normal mb-4">Dashboard <span class="font-bold">REAL-TIME</span></h3>
@@ -353,7 +353,7 @@
                     <h2 class="events--title">How To Work</h2>
                     <p class="events--description text-[30px] lg:text-[48px] font-extrabold">Cara Kerja FibrTIX</p>
                 </div>
-                <img src="./assets/images/how-to-work.png" alt="How to Work FibrTix" class="w-full mt-10 how-to-work-img cursor-zoom-in"/>
+                <img src="./assets/images/how-to-work.webp" alt="How to Work FibrTix" class="w-full mt-10 how-to-work-img cursor-zoom-in"/>
             </section>
             <!-- Image Popup Modal -->
             <div class="img-popup-overlay" id="imgPopup">
@@ -506,8 +506,6 @@
         const imgPopup = document.getElementById('imgPopup');
         const imgPopupClose = document.getElementById('imgPopupClose');
         const imgPopupImg = document.getElementById('imgPopupImg');
-        const imgZoomIn = document.getElementById('imgZoomIn');
-        const imgZoomOut = document.getElementById('imgZoomOut');
         let imgScale = 1;
         howToWorkImg.addEventListener('click', () => {
           imgPopup.classList.add('active');
@@ -516,14 +514,6 @@
         });
         imgPopupClose.addEventListener('click', () => {
           imgPopup.classList.remove('active');
-        });
-        imgZoomIn.addEventListener('click', () => {
-          imgScale += 0.2;
-          imgPopupImg.style.transform = `scale(${imgScale})`;
-        });
-        imgZoomOut.addEventListener('click', () => {
-          imgScale = Math.max(0.5, imgScale - 0.2);
-          imgPopupImg.style.transform = `scale(${imgScale})`;
         });
         imgPopup.addEventListener('click', (e) => {
           if (e.target === imgPopup) {
