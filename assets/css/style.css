@@ -14,14 +14,29 @@
 }
 
 .header--nav {
-    padding: 20px 120px 16px 120px;
-    transition: background 0.3s, box-shadow 0.3s;
+    padding: 20px 100px 16px 100px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 30;
     width: 100%;
     font-family: Poppins;
+}
+
+.header--nav ul > li > a {
+    box-sizing: border-box;
+    padding: 10px 16px;
+    border-radius: 8px;
+}
+.header--nav ul > li > a:hover {
+    background: #FFFFFF29;
+    padding: 10px 16px;
+}
+
+.header--nav.scrolled ul > li > a:hover {
+    background: #008080;
+    padding: 10px 16px;
+    color: #fff !important;
 }
 
 .header--nav.scrolled {
@@ -31,6 +46,20 @@
 
 .header--nav.scrolled ul li a {
     color: #008080 !important;
+    padding: 10px 16px;
+    background: transparent;
+}
+
+.header--nav.scrolled ul li a.active{
+    background: #008080;
+    padding: 10px 16px;
+    color: #fff !important;
+}
+
+.header--nav.scrolled ul li a.active{
+    background: #008080;
+    padding: 10px 16px;
+    color: #fff !important;
 }
 
 .header--nav.scrolled .btn-nav {
