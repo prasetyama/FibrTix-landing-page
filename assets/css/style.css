@@ -377,6 +377,53 @@
   color: #008080;
 }
 
+.img-popup-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.img-popup-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.img-popup-content {
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-popup-content img {
+  max-width: 80vw;
+  max-height: 70vh;
+  width: auto;
+  height: auto;
+  transition: transform 0.2s;
+}
+.img-popup-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #008080;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
 @media (max-width: 1024px) {
   .header {
     height: 1080px;
@@ -460,7 +507,7 @@
   }
   .btn-nav, .try-fibrtix {
     font-size: 20px;
-    padding: 16px 40px 16px 40px;
+    padding: 20px 40px 20px 40px;
   }
 
   .contact-mid {
