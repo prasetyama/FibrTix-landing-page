@@ -404,10 +404,10 @@
                         </div>
                         <div class="footer--grid--item">
                             <h4 class="footer--grid--item--title">Download</h4>
-                            <div class="footer--grid--item--list">
+                            <div class="footer--grid--item--list z-10">
                                 <div class="flex flex-col gap-4">
-                                    <a href="https://play.google.com/store/apps/details?id=io.appfibr.fibrtix" target="_blank"><img src="./assets/images/play-store.png" alt="Google Play Store" class="w-auto cursor-pointer" /></a>
-                                    <a href="#"><img src="./assets/images/app-store.png" alt="Apple App Store" class="w-auto cursor-pointer" /></a>
+                                    <a href="https://play.google.com/store/apps/details?id=io.appfibr.fibrtix" target="_blank"><img src="./assets/images/play-store.png" alt="Google Play Store" class="cursor-pointer w-[50%] lg:w-full" /></a>
+                                    <a href="#"><img src="./assets/images/app-store.png" alt="Apple App Store" class="w-[50%] lg:w-full" /></a>
                                 </div>
                             </div>
                         </div>
@@ -447,6 +447,7 @@
                     if (target) {
                         target.scrollIntoView({ behavior: 'smooth' });
                         mobileMenu.classList.remove('active');
+                        menuBtn.classList.remove('hidden');
                     }
                 }
             });
@@ -479,9 +480,11 @@
                 const href = link.getAttribute('href');
                 if (href && href.startsWith('#')) {
                     if (href === activeSection) {
-                        link.classList.add('font-bold');
+                        link.classList.add('!font-bold');
+                        link.classList.add('!text-[#008080]');
                     } else {
-                        link.classList.remove('font-bold');
+                        link.classList.remove('!font-bold');
+                        link.classList.remove('!text-[#008080]');
                     }
                 }
             });
@@ -489,10 +492,12 @@
             if (window.scrollY > 10) {
                 headerNav.classList.add('scrolled');
                 mobileMenuBtn.classList.add('scrolled');
+                closeMenuBtn.classList.add('scrolled');
                 if (logoImg) logoImg.src = './assets/images/fibrtix-green.png'; 
             } else {
                 headerNav.classList.remove('scrolled');
                 mobileMenuBtn.classList.remove('scrolled');
+                closeMenuBtn.classList.remove('scrolled');
                 if (logoImg) logoImg.src = './assets/images/fibrtix-white.png';
             }
         });
