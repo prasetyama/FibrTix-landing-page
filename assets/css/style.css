@@ -608,6 +608,64 @@
         display: inline-block;
     }
 
-  .grid-item-1 { order: 1; }
-  .grid-item-2 { order: 2; }
+    .grid-item-1 { order: 1; }
+    .grid-item-2 { order: 2; }
+}
+
+/* iPad Pro 12.9" Landscape (2048x1366) */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .header {
+        height: 600px;
+    }
+    .header--nav {
+        padding: 20px 60px 16px 60px;
+    }
+}
+
+/* iPad Pro 12.9" Portrait (1366x2048) */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    #mobile-menu-btn {
+        display: block !important;
+    }
+
+    .menu-nav {
+        display: none !important;
+    }
+}
+
+/* iPad Air 10.9" Landscape (1640x2360) */
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .header {
+        height: 580px;
+    }
+    .header--nav {
+        padding: 18px 35px 14px 35px;
+    }
+
+    .header--nav ul > li > a{
+        padding: 0px;
+    }
+
+    .header--nav.scrolled ul li a{
+        padding: 0px;
+    }
+}
+
+/* iPad Mini 8.3" Landscape (1488x2266) */
+@media only screen and (min-device-width: 744px) and (max-device-width: 1133px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .header {
+        height: 920px;
+
+        ul > li {
+            font-size: 17px;
+        }
+    }
+    .header--nav {
+        padding: 16px 12px 12px 12px;
+    }
+
+    .btn-nav {
+        padding: 10px 20px 10px 20px;
+    }
+    /* Add more custom styles for iPad Mini landscape below */
 }
