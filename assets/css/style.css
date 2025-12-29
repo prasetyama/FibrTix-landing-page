@@ -460,6 +460,35 @@
     font-family: Poppins;
 }
 
+.testimoni {
+    padding: 40px 120px 16px 120px;
+}
+
+.testimoni-card {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    box-shadow: 0px 2px 12px 0px #1F2D3D40;
+    border-radius: 20px;
+}
+
+.testimoni-card--header {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 40px 40px 90px 40px;
+    background: url('../images/bg-header-testimoni.png');
+    background-repeat: round;
+}
+
+.testimoni-card--content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0px 30px 30px 30px;
+    border-top-right-radius: 50px;
+}
+
 @media (max-width: 1024px) {
   .header {
     height: 1080px;
@@ -490,6 +519,14 @@
 
     .events {
         padding: 20px;
+    }
+
+    .testimoni {
+        padding: 20px;
+    }
+
+    .testimoni-card--header {
+        padding: 20px 20px 60px 20px;
     }
 
     .grid-2 {
@@ -667,5 +704,12 @@
     .btn-nav {
         padding: 10px 20px 10px 20px;
     }
-    /* Add more custom styles for iPad Mini landscape below */
+
+    /* Xiaomi Pad 7 Pro Landscape: 2368x1440px */
+    @media only screen and (min-width: 768px) and (orientation: landscape) {
+        .header--nav {
+            padding: 16px 24px 12px 24px;
+        }
+    }
+
 }
