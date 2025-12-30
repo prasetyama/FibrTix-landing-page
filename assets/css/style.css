@@ -669,3 +669,10 @@
     }
     /* Add more custom styles for iPad Mini landscape below */
 }
+
+/* Xiaomi Pad 7 Pro Landscape: 2368x1440px */
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .header--nav {
+        padding: 16px 24px 12px 24px;
+    }
+}
