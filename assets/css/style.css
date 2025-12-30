@@ -25,7 +25,6 @@
 
 .header--nav ul > li > a {
     box-sizing: border-box;
-    padding: 10px 16px;
     border-radius: 8px;
 }
 .header--nav ul > li > a:hover {
@@ -35,7 +34,6 @@
 
 .header--nav.scrolled ul > li > a:hover {
     background: #008080;
-    padding: 10px 16px;
     color: #fff !important;
 }
 
@@ -46,7 +44,6 @@
 
 .header--nav.scrolled ul li a {
     color: #008080 !important;
-    padding: 10px 16px;
     background: transparent;
 }
 
