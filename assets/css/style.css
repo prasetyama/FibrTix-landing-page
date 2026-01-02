@@ -649,7 +649,7 @@
 /* iPad Pro 12.9" Landscape (2048x1366) */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
     .header {
-        height: 600px;
+        height: 680px;
     }
     .header--nav {
         padding: 20px 60px 16px 60px;
@@ -670,7 +670,7 @@
 /* iPad Air 10.9" Landscape (1640x2360) */
 @media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
     .header {
-        height: 580px;
+        height: 630px;
     }
     .header--nav {
         padding: 18px 35px 14px 35px;
