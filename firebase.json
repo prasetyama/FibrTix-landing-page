@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "fibrticket-web",
+    "site": "fibrtix-dev",
     "public": ".",
     "ignore": [
       "firebase.json",
