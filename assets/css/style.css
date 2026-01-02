@@ -678,10 +678,12 @@
 
     .header--nav ul > li > a{
         padding: 0px;
+        font-size: 17px;
     }
 
     .header--nav.scrolled ul li a{
         padding: 0px;
+        font-size: 16px;
     }
 }
 
