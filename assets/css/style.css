@@ -509,10 +509,10 @@
     line-height: 56px;
   }
 
-    .events--grid {
+    /* .events--grid {
         grid-template-columns: 2fr 2fr;
         padding: 20px;
-    }
+    } */
 
     .events {
         padding: 20px;
