@@ -1,509 +1,126 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="./assets/css/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="og:title" content="FibrTIX">
-    <meta name="og:description" content="FibrTIX - Event Ticketing Solution">
-    <link rel="icon" href="./assets/images/favicon.svg" sizes="32x32">
-    <meta name="og:image" content="https://event.appfibr.io/assets/images/icons/fibrtix.png">
-  </head>
-  <body>
-        <header class="header pb-8 relative">
-            <nav class="sticky top-0 z-30 flex flex-col lg:flex-row md:flex-row items-center justify-between header--nav bg-transparent">
-                <div class="flex items-center flex-row space-x-4 md:space-x-8 mobile-nav gap-5 ">
-                    <img src="./assets/images/fibrtix-white.png" alt="fibrtix logo" class="w-[150px] h-[39px] logo" />
-                    <ul class="hidden md:hidden lg:flex space-x-8 font-semibold text-white menu-nav">
-                        <li><a href="#home">Beranda</a></li>
-                        <li><a href="#events">Events</a></li>
-                        <li><a href="#choose-fibrtix">Pakai FibrTIX</a></li>
-                        <li><a href="#testimoni">Testimoni</a></li>
-                        <li><a href="#how-it-works">Cara Kerja</a></li>
-                        <li><a href="https://wa.me/6285285999235?text=Halo%20tim%20FibrTIX!%20Saya%20membutuhkan%20bantuan%20terkait%20layanan%20di%20FibrTIX." target="_blank">Hubungi Kami</a></li>
-                    </ul>
-                    <button id="mobile-menu-btn" class="lg:hidden text-white focus:outline-none mobile-menu-btn" aria-label="Open Menu">
-                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                            <path d="M4 6h16M4 12h16M4 18h16"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <a
-                        href="https://wa.me/6281385312266?text=Halo%20tim%20FibrTIX!%20Saya%20ingin%20membuat%20ticketing%20event%20di%20FibrTIX."
-                        target="_blank"
-                        class="bg-white transition btn-nav"
-                    >
-                        Buat Event
-                    </a>
-                </div>
-            </nav>
-            <!-- Mobile menu -->
-            <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-80 z-40 flex flex-col items-center justify-center space-y-8 font-semibold text-white text-lg">
-                <button id="close-mobile-menu" class="absolute top-6 right-6">&times;</button>
-                <img src="./assets/images/fibrtix-green.png" alt="fibrtix logo" class="w-[150px] h-[39px] logo mt-[20px]" />
-                <a href="#home" class="scrolled-active">Beranda</a>
-                <a href="#events">Events</a>
-                <a href="#choose-fibrtix">Pakai FibrTIX</a>
-                <a href="#testimoni">Testimoni</a>
-                <a href="#how-it-works">Cara Kerja</a>
-                <a href="https://wa.me/6285285999235?text=Halo%20tim%20FibrTIX!%20Saya%20membutuhkan%20bantuan%20terkait%20layanan%20di%20FibrTIX." target="_blank" class="hover:text-[#ffc522]">Hubungi Kami</a>
-                <a href="https://wa.me/6281385312266?text=Halo%20tim%20FibrTIX!%20Saya%20ingin%20membuat%20ticketing%20event%20di%20FibrTIX." target="_blank" class="btn-event-mobile">Buat Event</a>
+    <meta name="og:title" content="FibrPOS">
+    <meta name="og:description" content="FibrPOS">
+    <link rel="icon" href="./assets/images/favicon.png" sizes="32x32">
+    <meta name="og:image" content="https://appfibr.io/assets/images/fibrpos.png">
+</head>
+
+<body>
+    <header class="relative pb-8">
+        <nav
+            class="sticky top-0 z-30 flex flex-col lg:flex-row md:flex-row items-center justify-between header--nav bg-transparent">
+            <div class="flex items-center flex-row space-x-4 md:space-x-8 mobile-nav gap-5 ">
+                <img src="./assets/images/fibrpos-white.png" alt="fibrpos logo" class="w-[150px] h-[39px] logo" />
+                <ul class="hidden md:hidden lg:flex space-x-8 font-semibold text-white menu-nav">
+                    <li><a href="">Modul</a></li>
+                    <li><a href="">Harga</a></li>
+                    <li><a href="">Cara Penggunaan</a></li>
+                    <li><a href="">Tentang</a></li>
+                    <li><a href="">Karir</a></li>
+                    <li><a href="https://wa.me/6285285999235?text=Halo%20tim%20FibrTIX!%20Saya%20membutuhkan%20bantuan%20terkait%20layanan%20di%20FibrTIX."
+                            target="_blank">Kontak</a></li>
+                </ul>
+                <button id="mobile-menu-btn" class="lg:hidden text-white focus:outline-none mobile-menu-btn"
+                    aria-label="Open Menu">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="https://wa.me/6281385312266?text=Halo%20tim%20FibrTIX!%20Saya%20ingin%20membuat%20ticketing%20event%20di%20FibrTIX."
+                    target="_blank"
+                    class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#3051A0] transition font-semibold btn-nav-masuk">
+                    Masuk
+                </a>
+                <a href="https://wa.me/6281385312266?text=Halo%20tim%20FibrTIX!%20Saya%20ingin%20membuat%20ticketing%20event%20di%20FibrTIX."
+                    target="_blank"
+                    class="px-6 py-2 rounded-full bg-[#0099ff] text-white hover:bg-[#0077cc] transition font-semibold shadow-lg shadow-blue-500/30 btn-nav-daftar">
+                    Daftar Gratis
+                </a>
+            </div>
+        </nav>
+        <!-- Mobile menu -->
+        <div id="mobile-menu"
+            class="fixed inset-0 bg-black bg-opacity-80 z-40 flex flex-col items-center justify-center space-y-8 font-semibold text-white text-lg">
+            <button id="close-mobile-menu" class="absolute top-6 right-6">&times;</button>
+            <img src="./assets/images/fibrpos-blue.png" alt="fibrpos logo" class="w-[150px] h-[39px] logo mt-[20px]" />
+            <a href="" class="scrolled-active">Modul</a>
+            <a href="">Harga</a>
+            <a href="">Cara Penggunaan</a>
+            <a href="">Tentang</a>
+            <a href="">Karir</a>
+            <a href="https://wa.me/6285285999235?text=Halo%20tim%20FibrTIX!%20Saya%20membutuhkan%20bantuan%20terkait%20layanan%20di%20FibrTIX."
+                target="_blank" class="hover:text-[#ffc522]">Kontak</a>
+            <a href="https://wa.me/6281385312266?text=Halo%20tim%20FibrTIX!%20Saya%20ingin%20membuat%20ticketing%20event%20di%20FibrTIX."
+                target="_blank" class="btn-event-mobile">Buat Event</a>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center pt-24 overflow-hidden" id="home">
+            <!-- Background Layers -->
+            <div class="absolute inset-0 bg-gradient-to-r from-[#0B1A45] to-[#1E3A8A] z-0"></div>
+            <!-- Store Background with blur and overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="./assets/images/hero-bg-store.png"
+                    class="w-full h-full object-cover opacity-20 mix-blend-overlay blur-sm">
+            </div>
+            <!-- Pattern Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="./assets/images/hero-bg-pattern.png" class="w-full h-full object-cover opacity-30">
             </div>
 
-            <section class="flex flex-row items-center header--content relative" id="home">
-                <div class="flex-1 text-left z-10 w-full max-w-xl flex flex-col gap-[40px] pt-[90px]">
-                    <div class="flex flex-col">
-                        <h1 class="mb-2 leading-tight header--content--content-left">
-                            Solusi Ticketing
-                        </h1>
-                        <h1 class="header--content--content-left--anti-down">
-                            ANTI DOWN
-                        </h1>
-                        <p class="mb-6 header--content--content-left--paragraph">
-                            Solusi digital pengelolaan tiket dan antrian yang dirancang untuk mempermudah proses pemesanan, validasi, dan manajemen pengunjung secara efisien dan modern.
-                        </p>
+            <div class="container mx-auto px-6 relative z-10 flex flex-col lg:flex-row items-center mt-10">
+                <!-- Left Content -->
+                <div class="w-full lg:w-1/2 text-white mb-12 lg:mb-0 pt-10 lg:pt-0">
+                    <h1 class="text-3xl lg:text-5xl font-bold leading-tight mb-6">
+                        Ayo Jadi Bos dengan <br>
+                        <img src="./assets/images/fibrpos-1.png" alt="fibrpos"
+                            class="h-10 lg:h-16 inline-block mt-2">
+                    </h1>
+                    <p class="text-base lg:text-lg text-gray-200 mb-8 leading-relaxed max-w-lg font-light">
+                        Dipercaya membantu dan memudahkan pelaku usaha kecil dan menengah (UMKM). Praktis dan cocok untuk berbagai jenis bisnis mulai dari F&B, Jasa, hingga Retail.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                        <a href="https://play.google.com/store/apps/details?id=io.appfibr.fibrtix" target="_blank"
+                            class="px-8 py-3 rounded-full bg-[#0099ff] text-white font-bold text-center hover:bg-[#0077cc] transition shadow-lg shadow-blue-500/50">
+                            Download Sekarang
+                        </a>
+                        <a href="https://wa.me/6285285999235?text=Halo%20tim%20FibrTIX!%20Saya%20membutuhkan%20bantuan%20terkait%20layanan%20di%20FibrTIX."
+                            target="_blank"
+                            class="px-8 py-3 rounded-full border border-white text-white font-bold text-center hover:bg-white hover:text-[#0B1A45] transition">
+                            Hubungi Kami
+                        </a>
                     </div>
-                    <a
-                        href="https://wa.me/6285285999235?text=Halo%20tim%20FibrTIX!%20Saya%20ingin%20membuat%20ticketing%20event%20di%20FibrTIX."
-                        target="_blank"
-                        class="try-fibrtix font-poppins"
-                    >
-                        Pelajari FibrTIX
-                    </a>
+
+                    <div class="flex items-center gap-3">
+                        <span class="text-[18px] font-poppins text-white ">Terdaftar di</span>
+                        <img src="./assets/images/kominfo.png" class="h-[56px] w-auto" alt="Kominfo Logo">
+                    </div>
                 </div>
-            </section>
-            <img
-                src="./assets/images/app-screenshoot.webp"
-                alt="FibrTIX Apps Preview"
-                class="app-preview"
-            />
-        </header>
-        <section class="events mb-10" id="events">
-            <div class="text-center events--header">
-                <h2 class="events--title">Events</h2>
-                <p class="events--description text-[30px] lg:text-[48px] font-poppins">Temukan Tiketmu</p>
             </div>
 
-            <div class="events--grid">
-                <div class="events--card cursor-pointer">
-                    <a href="https://event.fibrtix.io/12rJA3vylDMYovAeS0Gt" target="_blank">
-                        <img src="./assets/images/event-banner.png" alt="Event 1" class="events--card--image w-full rounded-lg w-auto h-[250px] z-[8] shadow-lg" />
-                        <div class="relative card bg-white p-4 -mt-[80px] z-10 rounded-lg mx-auto text-left">
-                            <p class="text-xs">
-                                <span class="text-secondary font-normal">Start from </span> <span class="font-medium text-error">
-                                    <span class="text-error">Rp. 110.000</span>
-                                </span>
-                            </p>
-        
-                            <div class="mt-1 mb-2">
-                                <p class="text-2xl font-medium text-primary line-clamp-2 text-ellipsis overflow-hidden mb-1 leading-[1.2]">
-                                    Ngemil in Cinema Tadabbur
-                                </p>
-        
-                                <p class="text-xs text-secondary font-normal">
-                                    CGV Depok Mall
-                                </p>
-                            </div>
-        
-                            <div class="flex">
-                                <div class="card__info-date">
-        
-                                    <p class="text-xs !text-[#393D4E] font-normal">
-                                        21 Desember 2025
-                                    </p>
-                                    <p class="text-xs !text-[#393D4E] font-normal">
-                                        10:00 - 15:00 WIB
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="events--card">
-                    <img src="./assets/images/sukun.png" alt="Event 1" class="events--card--image w-full rounded-lg w-auto h-[250px] z-[8] shadow-lg" />
-                    <div class="relative card bg-white p-4 -mt-[80px] z-10 rounded-lg mx-auto text-left">
-                        <p class="text-xs">
-                            <span class="font-medium text-error">
-                                FREE
-                            </span>
-                        </p>
-    
-                        <div class="mt-1 mb-2">
-                            <p class="text-2xl font-medium text-primary line-clamp-2 text-ellipsis overflow-hidden mb-1 leading-[1.2]">
-                                Warisan Rasa: Hari Jadi Jawa Tengah ke-80
-                            </p>
-    
-                            <p class="text-xs text-secondary font-normal">
-                                Lapangan Pancasila Simpang 5 Semarang
-                            </p>
-                        </div>
-    
-                        <div class="flex">
-                            <div class="card__info-date">
-    
-                                <p class="text-xs !text-[#393D4E] font-normal">
-                                    24 Agustus 2025
-                                </p>
-                                <p class="text-xs !text-[#393D4E] font-normal">
-                                    17:00 - 23:00 WIB
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="events--card">
-                    <img src="./assets/images/dzn-jakarta.png" alt="Event 1" class="events--card--image w-full rounded-lg w-auto h-[250px] z-[8] shadow-lg" />
-                    <div class="relative card bg-white p-4 -mt-[80px] z-10 rounded-lg mx-auto text-left">
-                        <p class="text-xs">
-                            <span class="font-medium text-error">
-                                FREE
-                            </span>
-                        </p>
-    
-                        <div class="mt-1 mb-2">
-                            <p class="text-2xl font-medium text-primary line-clamp-2 text-ellipsis overflow-hidden mb-1 leading-[1.2]">
-                                Jakarta - Dr Zakir Naik Indonesia Tour
-                            </p>
-    
-                            <p class="text-xs text-secondary font-normal">
-                                Ex Hanggar Teras Pancoran
-                            </p>
-                        </div>
-    
-                        <div class="flex">
-                            <div class="card__info-date">
-    
-                                <p class="text-xs !text-[#393D4E] font-normal">
-                                    18 - 20 Juli 2025
-                                </p>
-                                <p class="text-xs !text-[#393D4E] font-normal">
-                                    15:00 - 00:00 WIB
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="events--card">
-                    <img src="./assets/images/dzn-malang.png" alt="Event 1" class="events--card--image w-full rounded-lg w-auto h-[250px] z-[8] shadow-lg" />
-                    <div class="relative card bg-white p-4 -mt-[80px] z-10 rounded-lg mx-auto text-left">
-                        <p class="text-xs">
-                            <span class="font-medium text-error">
-                                FREE
-                            </span>
-                        </p>
-    
-                        <div class="mt-1 mb-2">
-                            <p class="text-2xl font-medium text-primary line-clamp-2 text-ellipsis overflow-hidden mb-1 leading-[1.2]">
-                                Malang - Dr Zakir Naik Indonesia Tour
-                            </p>
-    
-                            <p class="text-xs text-secondary font-normal">
-                                Stadion Gajayana
-                            </p>
-                        </div>
-    
-                        <div class="flex">
-                            <div class="card__info-date">
-    
-                                <p class="text-xs !text-[#393D4E] font-normal">
-                                    10 Juli 2025
-                                </p>
-                                <p class="text-xs !text-[#393D4E] font-normal">
-                                    15:00 - 00:00 WIB
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="events--card">
-                    <img src="./assets/images/dzn-bandung.png" alt="Event 1" class="events--card--image w-full rounded-lg w-auto h-[250px] z-[8] shadow-lg" />
-                    <div class="relative card bg-white p-4 -mt-[80px] z-10 rounded-lg mx-auto text-left">
-                        <p class="text-xs">
-                            <span class="font-medium text-error">
-                                FREE
-                            </span>
-                        </p>
-    
-                        <div class="mt-1 mb-2">
-                            <p class="text-2xl font-medium text-primary line-clamp-2 text-ellipsis overflow-hidden mb-1 leading-[1.2]">
-                                Bandung - Dr Zakir Naik Indonesia Tour
-                            </p>
-    
-                            <p class="text-xs text-secondary font-normal">
-                                Lapangan Tritan
-                            </p>
-                        </div>
-    
-                        <div class="flex">
-                            <div class="card__info-date">
-    
-                                <p class="text-xs !text-[#393D4E] font-normal">
-                                    12 - 13 Juli 2025
-                                </p>
-                                <p class="text-xs !text-[#393D4E] font-normal">
-                                    15:00 - 00:00 WIB
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="events--card">
-                    <img src="./assets/images/dzn-surakarta.png" alt="Event 1" class="events--card--image w-full rounded-lg w-auto h-[250px] z-[8] shadow-lg" />
-                    <div class="relative card bg-white p-4 -mt-[80px] z-10 rounded-lg mx-auto text-left">
-                        <p class="text-xs">
-                            <span class="font-medium text-error">
-                                FREE
-                            </span>
-                        </p>
-    
-                        <div class="mt-1 mb-2">
-                            <p class="text-2xl font-medium text-primary line-clamp-2 text-ellipsis overflow-hidden mb-1 leading-[1.2]">
-                                Surakarta - Dr Zakir Naik Indonesia Tour
-                            </p>
-    
-                            <p class="text-xs text-secondary font-normal">
-                                Universitas Muhammadiyah Surakarta
-                            </p>
-                        </div>
-    
-                        <div class="flex">
-                            <div class="card__info-date">
-    
-                                <p class="text-xs !text-[#393D4E] font-normal">
-                                    08 Juli 2025
-                                </p>
-                                <p class="text-xs !text-[#393D4E] font-normal">
-                                    15:00 - 00:00 WIB
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-
-        </section>
-        <section class="contact-mid">
-            <div class="contact-mid--container">
-                <div class="contact-mid--content">
-                    <h2 class="contact-mid--title text-[36px]">Buat event tapi Ticketing <span>LEMOT</span>?</h2>
-                    <h2 class="contact-mid--title text-[36px]">Bahkan sampai <span>DOWN</span>?</h2>
-                    <a href="https://wa.me/6285285999235?text=Halo%20tim%20FibrTIX!%20Saya%20membutuhkan%20bantuan%20terkait%20layanan%20di%20FibrTIX." target="_blank" class="try-fibrtix">
-                        Hubungi FibrTIX
-                    </a>
-                </div>
+            <!-- Right Content -->
+            <div class="w-full lg:w-1/2 relative hero-man lg:absolute lg:right-0 lg:bottom-0 lg:h-full z-0">
+                <img src="./assets/images/hero-man.png" alt="FibrPOS App"
+                    class="absolute inset-0 w-full h-full object-cover z-10">
+                <img src="./assets/images/hero-bg-store.png" alt="Overlay Circle"
+                    class="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none">
             </div>
         </section>
-        <div id="choose-fibrtix">
-            <section class="events !mt-1">
-                <div class="text-center events--header">
-                    <h2 class="events--title">Why Choose Us</h2>
-                    <p class="events--description text-[30px] lg:text-[48px] font-poppins">Mengapa FibrTIX</p>
-                </div>
-            </section>
-            <section class="choose-fibrtix">
-                <div class="grid-2 mb-10">
-                    <img src="./assets/images/strong.webp" alt="Why Choose Us 1" class="lg:w-[90%] w-full grid-item-1" />
-                    <div class="flex flex-col justify-center px-6 lg:px-0 grid-2--content grid-item-2">
-                        <h3 class="lg:text-[32px] text-[26px] font-bold mb-4">Server <span class="text-primary">KUAT</span> Anti <span class="text-error">DOWN</span></h3>
-                        <p class="text-lg text-[#677487] mb-6">
-                            FibrTIX hadir sebagai jawaban untuk penyelenggara event, tempat wisata, layanan publik, serta komunitas yang membutuhkan sistem ticketing anti-down dan praktis tanpa perlu infrastruktur yang rumit.
-                        </p>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="card-button flex flex-col bg-[#E34819] text-center">
-                                <p class="lg:text-[41px] text-[25px] font-bold text-white">65.000+</p>
-                                <p class="lg:text-2xl text-xl text-white">Akses User</p>
-                            </div>
-                            <div class="card-button flex flex-col bg-[#008080] text-center">
-                                <p class="lg:text-[41px] text-[25px] font-bold text-white">65.000+</p>
-                                <p class="lg:text-2xl text-xl text-white">Akses User</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-2">
-                    <div class="flex flex-col justify-center px-6 lg:px-0 grid-2--content grid-item-2">
-                        <img src="./assets/images/icon-setup.svg" class="w-[48px] h-[48px]" />
-                        <h3 class="lg:text-[32px] text-[26px] font-normal mb-4">Setup Event <span class="font-bold">MUDAH</span></h3>
-                        <p class="text-lg text-[#677487] mb-6">
-                            Buat dan kelola acara dengan cepat. Tambahkan detail event, atur harga tiket, dan mulai menjual hanya dalam beberapa langkah — tanpa perlu keahlian teknis.
-                        </p>
-                    </div>
-                    <img src="./assets/images/demo-app.webp" alt="Why Choose Us 1" class="w-full grid-item-1"/>
-                </div>
-                <div class="grid-2">
-                    <img src="./assets/images/dashboard.webp" alt="Why Choose Us 1" class="w-full grid-item-1" />
-                    <div class="flex flex-col justify-center px-6 lg:px-0 grid-2--content grid-item-2">
-                        <img src="./assets/images/icon-dashboard.svg" class="w-[48px] h-[48px]" />
-                        <h3 class="lg:text-[32px] text-[26px] font-normal mb-4">Dashboard <span class="font-bold">REAL-TIME</span></h3>
-                        <p class="text-lg text-[#677487] mb-6">
-                            Pantau performa penjualan tiket secara langsung! Dapatkan data penjualan terbaru, statistik pembeli, dan laporan pendapatan dalam satu tampilan interaktif yang selalu ter-update.
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div id="testimoni">
-            <section class="testimoni">
-                <div class="text-center events--header">
-                    <h2 class="events--title">Testimonial</h2>
-                    <p class="events--description text-[30px] lg:text-[48px] font-poppins font-extrabold">Apa Kata User Kami</p>
-                </div>
-                <div class="lg:pt-[80px] pt-[0px] gap-[40px]">
-                    <div class="events--grid">
-                        <div class="testimoni-card">
-                            <div class="testimoni-card--header">
-                                <img src="./assets/images/favicon.svg" class="w-[72px] h-[72px] rounded-full bg-white"/>
-                                <div class="ml-4 flex flex-col justify-center gap-1">
-                                    <p class="font-bold lg:text-2xl text-[18px] text-white font-poppins">Rizky Amalia</p>
-                                    <p class="lg:text-xl text-[16px] text-[#FFFFFF99] opacity-[60%] font-normal font-poppins">Event Organizer</p>
-                                </div>
-                            </div>
-                            <div class="testimoni-card--content">
-                                <div class="flex flex-row">
-                                    <img src="./assets/images/star.svg" alt="Star" class="h-[28px] w-[28px] mr-2"/>
-                                    <img src="./assets/images/star.svg" alt="Star" class="h-[28px] w-[28px] mr-2"/>
-                                    <img src="./assets/images/star.svg" alt="Star" class="h-[28px] w-[28px] mr-2"/>
-                                    <img src="./assets/images/star.svg" alt="Star" class="h-[28px] w-[28px] mr-2"/>
-                                    <img src="./assets/images/star.svg  " alt="Star" class="h-[28px] w-[28px] mr-2"/>
-                                </div>
-                                <p class="text-black font-poppins">
-                                    "FibrTIX benar-benar mengubah cara kami mengelola tiket acara. Sistemnya yang mudah digunakan dan andal membuat proses penjualan tiket menjadi lancar tanpa hambatan. Kami sangat puas dengan layanan mereka!"
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="testimoni-card">
-                            <div class="testimoni-card--header">
-                                <img src="./assets/images/favicon.svg" class="w-[72px] h-[72px] rounded-full bg-white"/>
-                                <div class="ml-4 flex flex-col justify-center gap-1">
-                                    <p class="font-bold lg:text-2xl text-[18px] text-white font-poppins">Andi Ario</p>
-                                    <p class="lg:text-xl text-[16px] text-[#FFFFFF99] opacity-[60%] font-normal font-poppins">Project Manager</p>
-                                </div>
-                            </div>
-                            <div class="testimoni-card--content">
-                                <div class="flex flex-row">
-                                    <img src="./assets/images/star.svg" alt="Star" class="h-[28px] w-[28px] mr-2"/>
-                                    <img src="./assets/images/star.svg" alt="Star" class="h-[28px] w-[28px] mr-2"/>
-                                    <img src="./assets/images/star.svg" alt="Star" class="h-[28px] w-[28px] mr-2"/>
-                                    <img src="./assets/images/star.svg" alt="Star" class="h-[28px] w-[28px] mr-2"/>
-                                    <img src="./assets/images/star.svg  " alt="Star" class="h-[28px] w-[28px] mr-2"/>
-                                </div>
-                                <p class="text-black font-poppins">
-                                    "FibrTIX benar-benar mengubah cara kami mengelola tiket acara. Sistemnya yang mudah digunakan dan andal membuat proses penjualan tiket menjadi lancar tanpa hambatan. Kami sangat puas dengan layanan mereka!"
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="testimoni-card">
-                            <div class="testimoni-card--header">
-                                <img src="./assets/images/favicon.svg" class="w-[72px] h-[72px] rounded-full bg-white"/>
-                                <div class="ml-4 flex flex-col justify-center gap-1">
-                                    <p class="font-bold lg:text-2xl text-[18px] text-white font-poppins">John Doe</p>
-                                    <p class="lg:text-xl text-[16px] text-[#FFFFFF99] opacity-[60%] font-normal font-poppins">Product Manager</p>
-                                </div>
-                            </div>
-                            <div class="testimoni-card--content">
-                                <div class="flex flex-row">
-                                    <img src="./assets/images/star.svg" alt="Star" class="h-[28px] w-[28px] mr-2"/>
-                                    <img src="./assets/images/star.svg" alt="Star" class="h-[28px] w-[28px] mr-2"/>
-                                    <img src="./assets/images/star.svg" alt="Star" class="h-[28px] w-[28px] mr-2"/>
-                                    <img src="./assets/images/star.svg" alt="Star" class="h-[28px] w-[28px] mr-2"/>
-                                    <img src="./assets/images/star.svg  " alt="Star" class="h-[28px] w-[28px] mr-2"/>
-                                </div>
-                                <p class="text-black font-poppins">
-                                    "FibrTIX benar-benar mengubah cara kami mengelola tiket acara. Sistemnya yang mudah digunakan dan andal membuat proses penjualan tiket menjadi lancar tanpa hambatan. Kami sangat puas dengan layanan mereka!"
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div id="how-it-works">
-            <section class="mt-1 how-to-work" id="how-it-works">
-                <div class="text-center events--header">
-                    <h2 class="events--title">How To Work</h2>
-                    <p class="events--description text-[30px] lg:text-[48px] font-extrabold font-poppins">Cara Kerja FibrTIX</p>
-                </div>
-                <img src="./assets/images/how-to-work.webp" alt="How to Work FibrTix" class="w-full mt-10 how-to-work-img cursor-zoom-in"/>
-            </section>
-            <!-- Image Popup Modal -->
-            <div class="img-popup-overlay" id="imgPopup">
-              <div class="img-popup-content">
-                <button class="img-popup-close" id="imgPopupClose">&times;</button>
-                <img src="./assets/images/how-to-work.png" alt="How to Work FibrTix" id="imgPopupImg" />
-              </div>
-            </div>
-            <section class="footer mt-10">
-                <div class="footer--content">
-                    <img src="./assets/images/footer-dot.svg" alt="FibrTIX Logo" class="mx-auto mb-10" />
-                    <div class="footer--grid">
-                        <div class="footer--grid--item">
-                            <img src="./assets/images/fibrtix-white.png" alt="FibrTIX Logo" class="mb-4 w-[150px] h-[39px]" />
-                            <div class="flex flex-row mb-4">
-                                <a href="https://www.instagram.com/fibrtix" target="_blank"><img src="./assets/images/instagram.svg" alt="Instagram" class="h-[28px] w-[28px] mr-4 cursor-pointer" /></a>
-                                <a href="https://www.facebook.com/profile.php?id=61576618110729" target="_blank"><img src="./assets/images/facebook.svg" alt="Facebook" class="h-[28px] w-[28px] mr-4 cursor-pointer" /></a>
-                                <a href="https://www.youtube.com/@appfibr" target="_blank"><img src="./assets/images/youtube.svg" alt="Youtube" class="h-[28px] w-[28px] mr-4 cursor-pointer" /></a>
-                                <a href="https://www.linkedin.com/company/appfibr" target="_blank"><img src="./assets/images/linkedin.svg" alt="Linkedin" class="h-[28px] w-[28px] mr-4 cursor-pointer" /></a>
-                            </div>
-                            <p class="text-white font-normal text-base font-poppins w-[280px]">
-                                Solusi digital pengelolaan tiket dan antrian online menggunakan aplikasi mobile
-                            </p>
-                        </div>
-                        <div class="footer--grid--item">
-                            <h4 class="footer--grid--item--title">FibrTIX</h4>
-                            <ul class="footer--grid--item--list">
-                                <li><a href="#events">Events</a></li>
-                                <li><a href="#choose-fibrtix">Pakai FibrTIX</a></li>
-                                <li><a href="#how-it-works">Cara Kerja</a></li>
-                                <li><a href="https://wa.me/6285285999235?text=Halo%20tim%20FibrTIX!%20Saya%20membutuhkan%20bantuan%20terkait%20layanan%20di%20FibrTIX." target="_blank">Kontak</a></li>
-                                <li><a href="https://appfibr.io/syarat-ketentuan" target="_blank">Syarat & Ketentuan</a></li>
-                                <li><a href="https://appfibr.io/privacy-policy" target="_blank">Kebijakan Privasi</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer--grid--item">
-                            <h4 class="footer--grid--item--title">Bantuan</h4>
-                            <div class="footer--grid--item--list">
-                                <div class="flex flex-row">
-                                    <img src="./assets/images/mail.svg" alt="Email" class="h-[19px] w-[19px] mr-2 mt-1" />
-                                    <a href="mailto:support@fibrcorp.io">support@fibrcorp.io</a>
-                                </div>
-                                <div class="flex flex-row">
-                                    <img src="./assets/images/phone.svg" alt="Phone" class="h-[19px] w-[19px] mr-2 mt-1" />
-                                    <a href="https://wa.me/6285285999235?text=Halo%20tim%20FibrTIX!%20Saya%20membutuhkan%20bantuan%20terkait%20layanan%20di%20FibrTIX.">+62 852 8599 9235</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer--grid--item">
-                            <h4 class="footer--grid--item--title">Download</h4>
-                            <div class="footer--grid--item--list z-10">
-                                <div class="flex flex-col gap-4">
-                                    <a href="https://play.google.com/store/apps/details?id=io.appfibr.fibrtix" target="_blank"><img src="./assets/images/play-store.png" alt="Google Play Store" class="cursor-pointer w-[50%] lg:w-[160px] md:w-[160px]" /></a>
-                                    <a href="https://apps.apple.com/id/app/fibrtix/id6755172266"><img src="./assets/images/app-store.png" alt="Apple App Store" class="w-[50%] lg:w-[160px] md:w-[160px]" /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="my-10 border-t border-[#CCCCCC]" />
-                    <div class="flex flex-col lg:flex-row justify-between items-center pb-6 footer--copyright">
-                        <p class="text-white text-base font-normal">Copyright © 2025 <span class="font-bold">FibrTIX</span>. All rights reserved.</p>
-                        <div class="flex flex-row gap-2 justify-center items-center">
-                            <p class="text-white text-base mt-4 lg:mt-0">Bagian dari</p>
-                            <img src="./assets/images/fibr.png" alt="Appfibr Logo" class="h-[26px] w-[55px] mt-1" />
-                        </div>
-                    </div>
-                    <img src="./assets/images/ornament-footer.svg" alt="Footer Ornament" class="absolute bottom-0 right-0" />
-                </div>
-            </section>
-        </div>
+    </header>
     <script>
         // Mobile menu toggle
         const menuBtn = document.getElementById('mobile-menu-btn');
@@ -519,7 +136,7 @@
         });
         // Scroll to section on menu click
         document.querySelectorAll('#mobile-menu a, .header--nav ul li a').forEach(link => {
-            link.addEventListener('click', function(e) {
+            link.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
                 if (href && href.startsWith('#')) {
                     e.preventDefault();
@@ -541,6 +158,7 @@
         // Header nav background on scroll
         const headerNav = document.querySelector('.header--nav');
         const logoImg = document.querySelector('.header--nav img');
+        const btnMasuk = document.querySelector('.btn-nav-masuk');
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         window.addEventListener('scroll', () => {
             // Active menu logic
@@ -571,12 +189,14 @@
                 headerNav.classList.add('scrolled');
                 mobileMenuBtn.classList.add('scrolled');
                 closeMenuBtn.classList.add('scrolled');
-                if (logoImg) logoImg.src = './assets/images/fibrtix-green.png'; 
+                btnMasuk.classList.add('scrolled');
+                if (logoImg) logoImg.src = './assets/images/fibrpos-blue.png';
             } else {
                 headerNav.classList.remove('scrolled');
                 mobileMenuBtn.classList.remove('scrolled');
                 closeMenuBtn.classList.remove('scrolled');
-                if (logoImg) logoImg.src = './assets/images/fibrtix-white.png';
+                btnMasuk.classList.remove('scrolled');
+                if (logoImg) logoImg.src = './assets/images/fibrpos-white.png';
             }
         });
         // Image popup and zoom logic
@@ -586,18 +206,19 @@
         const imgPopupImg = document.getElementById('imgPopupImg');
         let imgScale = 1;
         howToWorkImg.addEventListener('click', () => {
-          imgPopup.classList.add('active');
-          imgScale = 1;
-          imgPopupImg.style.transform = `scale(${imgScale})`;
+            imgPopup.classList.add('active');
+            imgScale = 1;
+            imgPopupImg.style.transform = `scale(${imgScale})`;
         });
         imgPopupClose.addEventListener('click', () => {
-          imgPopup.classList.remove('active');
+            imgPopup.classList.remove('active');
         });
         imgPopup.addEventListener('click', (e) => {
-          if (e.target === imgPopup) {
-            imgPopup.classList.remove('active');
-          }
+            if (e.target === imgPopup) {
+                imgPopup.classList.remove('active');
+            }
         });
     </script>
-  </body>
+</body>
+
 </html>
