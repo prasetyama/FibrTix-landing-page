@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="relative pb-8">
+    <header class="relative">
         <nav
             class="sticky top-0 z-30 flex flex-col lg:flex-row md:flex-row items-center justify-between header--nav bg-transparent">
             <div class="flex items-center flex-row space-x-4 md:space-x-8 mobile-nav gap-5 ">
@@ -42,12 +42,12 @@
             <div class="flex items-center space-x-4">
                 <a href="https://wa.me/6281385312266?text=Halo%20tim%20FibrTIX!%20Saya%20ingin%20membuat%20ticketing%20event%20di%20FibrTIX."
                     target="_blank"
-                    class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#3051A0] transition font-semibold btn-nav-masuk">
+                    class="px-6 py-2 rounded-full border border-white text-white transition font-semibold btn-nav-masuk">
                     Masuk
                 </a>
                 <a href="https://wa.me/6281385312266?text=Halo%20tim%20FibrTIX!%20Saya%20ingin%20membuat%20ticketing%20event%20di%20FibrTIX."
                     target="_blank"
-                    class="px-6 py-2 rounded-full bg-[#0099ff] text-white hover:bg-[#0077cc] transition font-semibold shadow-lg shadow-blue-500/30 btn-nav-daftar">
+                    class="px-6 py-2 rounded-full bg-[#0099ff] text-white transition font-semibold shadow-lg shadow-blue-500/30 btn-nav-daftar">
                     Daftar Gratis
                 </a>
             </div>
@@ -69,7 +69,7 @@
         </div>
 
         <!-- Hero Section -->
-        <section class="relative min-h-screen flex items-center pt-24 overflow-hidden" id="home">
+        <section class="relative min-h-screen flex items-center pt-24 overflow-hidden pb-[210px]" id="home">
             <!-- Background Layers -->
             <div class="absolute inset-0 bg-gradient-to-r from-[#0B1A45] to-[#1E3A8A] z-0"></div>
             <!-- Store Background with blur and overlay -->
@@ -87,11 +87,11 @@
                 <div class="w-full lg:w-1/2 text-white mb-12 lg:mb-0 pt-10 lg:pt-0">
                     <h1 class="text-3xl lg:text-5xl font-bold leading-tight mb-6">
                         Ayo Jadi Bos dengan <br>
-                        <img src="./assets/images/fibrpos-1.png" alt="fibrpos"
-                            class="h-10 lg:h-16 inline-block mt-2">
+                        <img src="./assets/images/fibrpos-1.png" alt="fibrpos" class="h-10 lg:h-16 inline-block mt-2">
                     </h1>
                     <p class="text-base lg:text-lg text-gray-200 mb-8 leading-relaxed max-w-lg font-light">
-                        Dipercaya membantu dan memudahkan pelaku usaha kecil dan menengah (UMKM). Praktis dan cocok untuk berbagai jenis bisnis mulai dari F&B, Jasa, hingga Retail.
+                        Dipercaya membantu dan memudahkan pelaku usaha kecil dan menengah (UMKM). Praktis dan cocok
+                        untuk berbagai jenis bisnis mulai dari F&B, Jasa, hingga Retail.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 mb-12">
                         <a href="https://play.google.com/store/apps/details?id=io.appfibr.fibrtix" target="_blank"
@@ -105,7 +105,7 @@
                         </a>
                     </div>
 
-                    <div class="flex items-center gap-3">
+                    <div class="flex items-center gap-3 pt-[70px]">
                         <span class="text-[18px] font-poppins text-white ">Terdaftar di</span>
                         <img src="./assets/images/kominfo.png" class="h-[56px] w-auto" alt="Kominfo Logo">
                     </div>
@@ -115,13 +115,322 @@
             <!-- Right Content -->
             <div class="w-full lg:w-1/2 relative hero-man lg:absolute lg:right-0 lg:bottom-0 lg:h-full z-0">
                 <img src="./assets/images/hero-man.png" alt="FibrPOS App"
-                    class="absolute inset-0 w-full h-full object-cover z-10">
+                    class="absolute inset-0 w-full h-full object-contain z-10">
                 <img src="./assets/images/hero-bg-store.png" alt="Overlay Circle"
                     class="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none">
             </div>
         </section>
     </header>
+
+    <!-- Stats & Features Section -->
+    <section class="relative bg-[#3051A0] lg:pb-32 pb-16">
+        <!-- Stats Bar -->
+        <div style="background-image: url('assets/images/bg-stats.png');">
+            <div class="container mx-auto px-6 py-12 md:py-20">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+                    <!-- Text -->
+                    <div class="w-full lg:w-1/3 text-white">
+                        <h2 class="text-2xl lg:text-3xl font-bold leading-relaxed font-poppins">
+                            Dipercaya berbagai bisnis mulai dari FnB, jasa, hingga retail.
+                        </h2>
+                    </div>
+                    <!-- Stats Cards -->
+                    <div class="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Card 1 -->
+                        <div class="bg-[#E34819] rounded-2xl p-8 text-center text-white shadow-lg">
+                            <p class="text-3xl lg:text-4xl font-bold mb-2">10.000+</p>
+                            <p class="text-lg opacity-90">Download</p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="bg-white rounded-2xl p-8 text-center text-[#3051A0] shadow-lg">
+                            <p class="text-3xl lg:text-4xl font-bold mb-2">100.000+</p>
+                            <p class="text-lg text-[#393D4E]">Transaksi</p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="bg-[#24A7FF] rounded-2xl p-8 text-center text-white shadow-lg">
+                            <p class="text-3xl lg:text-4xl font-bold mb-2">200+</p>
+                            <p class="text-lg opacity-90">Kota di Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature Highlight Section -->
+        <div class="w-full container--features">
+            <div class="bg-white rounded-[40px] p-8 lg:p-12 overflow-hidden">
+                <div class="flex flex-col lg:flex-row gap-12 items-start"
+                    style="border: 1px solid #d1d5db; border-radius: 70px;">
+                    <!-- Left: Phone Image -->
+                    <div
+                        class="w-full lg:w-5/12 rounded-3xl p-8 flex items-center justify-center relative overflow-hidden h-[799px]">
+                        <img src="./assets/images/feature-phone.png" alt="FibrPOS UI"
+                            class="w-full object-contain z-10 relative rounded-[3rem] h-[799px]">
+                    </div>
+
+                    <!-- Right: Accordion -->
+                    <div class="w-full lg:w-7/12 pt-[50px] pr-14">
+                        <h2
+                            class="text-3xl lg:text-[43px] font-semibold text-[#1F2937] leading-tight mb-4 font-poppins">
+                            Kelola Data Penjualan, Lebih Mudah dengan <span class="text-[#24A7FF]">FibrPos</span>
+                        </h2>
+
+                        <div class="mt-8 space-y-4" id="feature-accordion">
+                            <!-- Accordion Item 1 (Active by default) -->
+                            <div
+                                class="accordion-item border border-blue-100 rounded-xl overflow-hidden active flex flex-col">
+                                <button
+                                    class="w-full text-left px-6 py-4 bg-[#EFF6FF] flex justify-between items-center text-[#1F2937] font-bold text-lg"
+                                    onclick="toggleAccordion(this)">
+                                    <span class="text-[20px] font-semibold font-poppins text-[#393D4E]">Template
+                                        bisnis</span>
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="hidden">
+                                        <path
+                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
+                                            fill="#393D4E" />
+                                        <path
+                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
+                                            fill="#393D4E" />
+                                    </svg>
+
+                                </button>
+                                <div
+                                    class="accordion-content px-6 py-4 bg-[#EFF6FF] text-gray-600 block border-t border-blue-100">
+                                    Template sangat membantu kamu untuk lebih cepat setup toko.
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 2 -->
+                            <div class="accordion-item border-b border-gray-200">
+                                <button
+                                    class="w-full text-left px-6 py-6 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
+                                    onclick="toggleAccordion(this)">
+                                    <span class="text-[20px] font-semibold font-poppins text-[#393D4E]">Kelola banyak
+                                        toko dengan satu aplikasi</span>
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
+                                            fill="#393D4E" />
+                                        <path
+                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
+                                            fill="#393D4E" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content px-6 py-4 bg-gray-50 text-gray-600 hidden">
+                                    Kelola semua cabang toko Anda dengan mudah dalam satu dashboard terintegrasi.
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 3 -->
+                            <div class="accordion-item border-b border-gray-200">
+                                <button
+                                    class="w-full text-left px-6 py-6 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
+                                    onclick="toggleAccordion(this)">
+                                    <span class="text-[20px] font-semibold font-poppins text-[#393D4E]">Kelola stok dan
+                                        produk</span>
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
+                                            fill="#393D4E" />
+                                        <path
+                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
+                                            fill="#393D4E" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content px-6 py-4 bg-gray-50 text-gray-600 hidden">
+                                    Pantau dan atur stok produk secara real-time untuk menghindari kehabisan barang.
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 4 -->
+                            <div class="accordion-item border-b border-gray-200">
+                                <button
+                                    class="w-full text-left px-6 py-6 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
+                                    onclick="toggleAccordion(this)">
+                                    <span class="text-[20px] font-semibold font-poppins text-[#393D4E]">Import data
+                                        mudah</span>
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
+                                            fill="#393D4E" />
+                                        <path
+                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
+                                            fill="#393D4E" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content px-6 py-4 bg-gray-50 text-gray-600 hidden">
+                                    Import data produk dan pelanggan dengan cepat menggunakan format CSV atau Excel.
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 5 -->
+                            <div class="accordion-item border-b border-gray-200">
+                                <button
+                                    class="w-full text-left px-6 py-6 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
+                                    onclick="toggleAccordion(this)">
+                                    <span class="text-[20px] font-semibold font-poppins text-[#393D4E]">Catatan pesanan
+                                        lengkap</span>
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
+                                            fill="#393D4E" />
+                                        <path
+                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
+                                            fill="#393D4E" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content px-6 py-4 bg-gray-50 text-gray-600 hidden">
+                                    Catat setiap detail pesanan pelanggan untuk memastikan akurasi dan kepuasan.
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 6 -->
+                            <div class="accordion-item border-b border-gray-200">
+                                <button
+                                    class="w-full text-left px-6 py-6 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
+                                    onclick="toggleAccordion(this)">
+                                    <span class="text-[20px] font-semibold font-poppins text-[#393D4E]">Pembayaran QRIS
+                                        dan cashless</span>
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
+                                            fill="#393D4E" />
+                                        <path
+                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
+                                            fill="#393D4E" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content px-6 py-4 bg-gray-50 text-gray-600 hidden">
+                                    Dukung berbagai metode pembayaran digital untuk kemudahan transaksi pelanggan.
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 7 -->
+                            <div class="accordion-item border-b border-gray-200">
+                                <button
+                                    class="w-full text-left px-6 py-6 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
+                                    onclick="toggleAccordion(this)">
+                                    <span class="text-[20px] font-semibold font-poppins text-[#393D4E]">Struk fisik dan
+                                        digital</span>
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
+                                            fill="#393D4E" />
+                                        <path
+                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
+                                            fill="#393D4E" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content px-6 py-4 bg-gray-50 text-gray-600 hidden">
+                                    Cetak struk atau kirim struk digital melalui email dan WhatsApp.
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 8 -->
+                            <div class="accordion-item border-b border-gray-200">
+                                <button
+                                    class="w-full text-left px-6 py-6 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
+                                    onclick="toggleAccordion(this)">
+                                    <span class="text-[20px] font-semibold font-poppins text-[#393D4E]">Report data
+                                        penjualan lengkap</span>
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
+                                            fill="#393D4E" />
+                                        <path
+                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
+                                            fill="#393D4E" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content px-6 py-4 bg-gray-50 text-gray-600 hidden">
+                                    Dapatkan laporan penjualan harian, mingguan, dan bulanan yang mendetail.
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 9 -->
+                            <div class="accordion-item border-b border-gray-200 mb-[20px]">
+                                <button
+                                    class="w-full text-left px-6 py-6 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
+                                    onclick="toggleAccordion(this)">
+                                    <span class="text-[20px] font-semibold font-poppins text-[#393D4E]">Manajemen
+                                        karyawan</span>
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
+                                            fill="#393D4E" />
+                                        <path
+                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
+                                            fill="#393D4E" />
+                                    </svg>
+                                </button>
+                                <div class="accordion-content px-6 py-4 bg-gray-50 text-gray-600 hidden">
+                                    Atur hak akses dan pantau kinerja karyawan dengan mudah.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script>
+        // Accordion Logic
+        function toggleAccordion(button) {
+            const item = button.parentElement;
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+            const isActive = item.classList.contains('active');
+
+            // Close all items
+            document.querySelectorAll('.accordion-item').forEach(accItem => {
+                accItem.classList.remove('active');
+                accItem.classList.add('border-b', 'border-gray-200');
+                accItem.classList.remove('border', 'border-blue-100', 'rounded-xl');
+
+                // Reset button style
+                const btn = accItem.querySelector('button');
+                btn.classList.remove('bg-[#EFF6FF]', 'text-[#1F2937]', 'font-bold');
+                btn.classList.add('text-gray-700', 'font-medium');
+
+                // Show icon (make visible)
+                const icn = btn.querySelector('svg');
+                icn.classList.remove('hidden'); // Ensure visible
+                icn.classList.remove('rotate-180');
+                icn.classList.add('text-gray-400');
+                icn.classList.remove('text-[#1F2937]');
+
+                // Hide content
+                const cnt = accItem.querySelector('.accordion-content');
+                cnt.classList.add('hidden');
+                cnt.classList.remove('border-t', 'border-blue-100'); // Remove border when closed
+            });
+
+            if (!isActive) {
+                // Open clicked item
+                item.classList.add('active');
+                item.classList.remove('border-b', 'border-gray-200');
+                item.classList.add('border', 'border-blue-100', 'rounded-xl');
+
+                // Active button style
+                button.classList.remove('text-gray-700', 'font-medium');
+                button.classList.add('bg-[#EFF6FF]', 'text-[#1F2937]', 'font-bold');
+
+                // Hide icon
+                icon.classList.add('hidden'); // Hide when active
+
+                // Show content
+                content.classList.remove('hidden');
+                content.classList.add('border-t', 'border-blue-100'); // Add border when open
+            }
+        }
         // Mobile menu toggle
         const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -199,25 +508,7 @@
                 if (logoImg) logoImg.src = './assets/images/fibrpos-white.png';
             }
         });
-        // Image popup and zoom logic
-        const howToWorkImg = document.querySelector('.how-to-work-img');
-        const imgPopup = document.getElementById('imgPopup');
-        const imgPopupClose = document.getElementById('imgPopupClose');
-        const imgPopupImg = document.getElementById('imgPopupImg');
-        let imgScale = 1;
-        howToWorkImg.addEventListener('click', () => {
-            imgPopup.classList.add('active');
-            imgScale = 1;
-            imgPopupImg.style.transform = `scale(${imgScale})`;
-        });
-        imgPopupClose.addEventListener('click', () => {
-            imgPopup.classList.remove('active');
-        });
-        imgPopup.addEventListener('click', (e) => {
-            if (e.target === imgPopup) {
-                imgPopup.classList.remove('active');
-            }
-        });
+
     </script>
 </body>
 
