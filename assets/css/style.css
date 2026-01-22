@@ -314,11 +314,7 @@ body {
 }
 
 .footer--content {
-    background: #008080;
-    border-top-right-radius: 80px;
-    border-top-left-radius: 80px;
-    padding: 70px 80px 20px 80px;
-    position: relative;
+    padding: 80px 120px 80px 120px;
 }
 
 .footer--grid {
