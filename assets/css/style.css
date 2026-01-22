@@ -31,14 +31,15 @@ body {
 .header--nav ul > li > a {
     box-sizing: border-box;
     border-radius: 8px;
+    padding: 10px;
 }
 .header--nav ul > li > a:hover {
     background: #FFFFFF29;
-    padding: 10px 16px;
+    padding: 10px;
 }
 
 .header--nav.scrolled ul > li > a:hover {
-    background: #008080;
+    background: #24A7FF;
     color: #fff !important;
 }
 
@@ -53,19 +54,19 @@ body {
 }
 
 .header--nav.scrolled ul li a.active{
-    background: #008080;
+    background: #24A7FF;
     padding: 10px 16px;
     color: #fff !important;
 }
 
 .header--nav.scrolled ul li a.active{
-    background: #008080;
+    background: #24A7FF;
     padding: 10px 16px;
     color: #fff !important;
 }
 
 .header--nav.scrolled .btn-nav {
-    background: #008080 !important;
+    background: #24A7FF !important;
     color: #fff !important;
 }
 
