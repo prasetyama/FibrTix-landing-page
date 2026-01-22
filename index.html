@@ -26,13 +26,13 @@
             <div class="flex items-center flex-row space-x-4 md:space-x-8 mobile-nav gap-5 ">
                 <img src="./assets/images/fibrpos-white.png" alt="fibrpos logo" class="w-[150px] h-[39px] logo" />
                 <ul class="hidden md:hidden lg:flex space-x-8 font-semibold text-white menu-nav">
-                    <li><a href="">Modul</a></li>
-                    <li><a href="">Harga</a></li>
-                    <li><a href="">Cara Penggunaan</a></li>
-                    <li><a href="">Tentang</a></li>
-                    <li><a href="">Karir</a></li>
+                    <li><a href="">Beranda</a></li>
+                    <li><a href="#feature">Fitur</a></li>
+                    <li><a href="#solution">Solusi Bisnis</a></li>
+                    <li><a href="#review">Ulasan</a></li>
+                    <li><a href="#services">Layanan</a></li>
                     <li><a href="https://wa.me/6285285999235?text=Halo%20tim%20FibrTIX!%20Saya%20membutuhkan%20bantuan%20terkait%20layanan%20di%20FibrTIX."
-                            target="_blank">Kontak</a></li>
+                            target="_blank">Hubungi Kami</a></li>
                 </ul>
                 <button id="mobile-menu-btn" class="lg:hidden text-white focus:outline-none mobile-menu-btn"
                     aria-label="Open Menu">
@@ -59,13 +59,13 @@
             class="fixed inset-0 bg-black bg-opacity-80 z-40 flex flex-col items-center justify-center space-y-8 font-semibold text-white text-lg">
             <button id="close-mobile-menu" class="absolute top-6 right-6">&times;</button>
             <img src="./assets/images/fibrpos-blue.png" alt="fibrpos logo" class="w-[150px] h-[39px] logo mt-[20px]" />
-            <a href="" class="scrolled-active">Modul</a>
-            <a href="">Harga</a>
-            <a href="">Cara Penggunaan</a>
-            <a href="">Tentang</a>
-            <a href="">Karir</a>
+            <a href="" class="scrolled-active">Beranda</a>
+            <a href="">Fitur</a>
+            <a href="">Solusi Bisnis</a>
+            <a href="">Ulasan</a>
+            <a href="">Layanan</a>
             <a href="https://wa.me/6285285999235?text=Halo%20tim%20FibrTIX!%20Saya%20membutuhkan%20bantuan%20terkait%20layanan%20di%20FibrTIX."
-                target="_blank" class="hover:text-[#ffc522]">Kontak</a>
+                target="_blank" class="hover:text-[#ffc522]">Hubungi Kami</a>
         </div>
 
         <!-- Hero Section -->
@@ -85,7 +85,7 @@
             <div class="container mx-auto px-6 relative z-10 flex flex-col lg:flex-row items-center mt-10">
                 <!-- Left Content -->
                 <div class="w-full lg:w-1/2 text-white mb-12 lg:mb-0 pt-10 lg:pt-0">
-                    <h1 class="text-3xl lg:text-5xl font-bold leading-tight mb-6">
+                    <h1 class="text-3xl lg:text-[42px] font-bold leading-tight mb-6">
                         Ayo Jadi Bos dengan <br>
                         <img src="./assets/images/fibrpos-1.png" alt="fibrpos" class="h-10 lg:h-16 inline-block mt-2">
                     </h1>
@@ -156,7 +156,7 @@
             </div>
         </div>
         <!-- Feature Highlight Section -->
-        <div class="w-full container--features">
+        <div class="w-full container--features" id="feature">
             <div class="bg-white rounded-[40px] p-8 lg:p-12 overflow-hidden">
                 <div class="flex flex-col lg:flex-row items-start"
                     style="border: 1px solid #d1d5db; border-radius: 70px;">
@@ -381,7 +381,7 @@
     </section>
 
     <!-- Service Section -->
-    <section class="bg-[#1e2a4d] py-16 lg:py-24">
+    <section class="bg-[#1e2a4d] py-16 lg:py-24" id="solution">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-2xl lg:text-4xl font-bold text-white mb-12 lg:mb-16">
                 Satu <span class="text-[#24A7FF]">FibrPos</span> untuk Semua Kebutuhan Bisnis
@@ -536,7 +536,7 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="bg-white py-16 lg:py-24 rounded-b-[60px] lg:rounded-b-[80px] relative z-20" id="testimoni">
+    <section class="bg-white py-16 lg:py-24 rounded-b-[60px] lg:rounded-b-[80px] relative z-20" id="review">
         <div class="container mx-auto px-6">
             <h2 class="text-2xl lg:text-[43px] font-semibold text-[#393D4E] text-center mb-12 lg:mb-16">
                 Apa Kata <span class="text-[#24A7FF]">Bos</span> Kami?
@@ -546,6 +546,10 @@
                 <!-- Card 1 -->
                 <div class="bg-[#EFF6FF] rounded-[32px] p-8 lg:p-10">
                     <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="w-14 h-14 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600 font-bold text-xl">
+                            MT
+                        </div>
                         <div>
                             <h4 class="font-bold text-lg">Muhamad Tholhah</h4>
                             <p class="text-sm text-gray-500">Bengkel AC ABC Teknik Depok</p>
@@ -584,6 +588,10 @@
                 <!-- Card 2 -->
                 <div class="bg-[#EFF6FF] rounded-[32px] p-8 lg:p-10">
                     <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="w-14 h-14 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600 font-bold text-xl">
+                            KA
+                        </div>
                         <div>
                             <h4 class="font-bold text-lg">Kaslieyitno Albarru</h4>
                             <p class="text-sm text-gray-500">Karyawan Swasta</p>
@@ -622,6 +630,10 @@
                 <!-- Card 3 -->
                 <div class="bg-[#EFF6FF] rounded-[32px] p-8 lg:p-10">
                     <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="w-14 h-14 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600 font-bold text-xl">
+                            BM
+                        </div>
                         <div>
                             <h4 class="font-bold text-lg">Bunga Maharani</h4>
                             <p class="text-sm text-gray-500">Pengusaha Craft</p>
@@ -661,7 +673,7 @@
     </section>
 
     <!-- Map Section -->
-    <section class="bg-[#3051A0] py-20 lg:py-32 mt-[-70px] relative z-10">
+    <section class="bg-[#3051A0] py-20 lg:py-32 mt-[-70px] relative z-10" id="services">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-2xl lg:text-[43px] font-bold text-white mb-16 lg:mb-20">
                 Berkembang Bersama Bisnis di <span class="text-[#24A7FF]">200+</span> Kota Indonesia
@@ -878,7 +890,7 @@
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         window.addEventListener('scroll', () => {
             // Active menu logic
-            const sections = ['#events', '#choose-fibrtix', '#how-it-works', '#testimoni'];
+            const sections = ['#feature', '#solution', '#review', '#services'];
             let activeSection = '';
             for (const id of sections) {
                 const section = document.querySelector(id);

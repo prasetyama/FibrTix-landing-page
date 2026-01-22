@@ -55,13 +55,13 @@ body {
 
 .header--nav.scrolled ul li a.active{
     background: #24A7FF;
-    padding: 10px 16px;
+    padding: 10px;
     color: #fff !important;
 }
 
 .header--nav.scrolled ul li a.active{
     background: #24A7FF;
-    padding: 10px 16px;
+    padding: 10px;
     color: #fff !important;
 }
 
