@@ -18,14 +18,14 @@ body {
 }
 
 .header--nav {
-    padding: 20px 100px 16px 100px;
+    padding: 22px 48px 22px 48px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 30;
     width: 100%;
     font-family: Poppins;
-    backdrop-filter: blur(30px)
+    background: #FFFFFF0D;
 }
 
 .header--nav ul > li > a {
@@ -71,9 +71,8 @@ body {
 }
 
 .btn-nav-masuk {
-    padding: 8px 16px 8px 16px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
     border-radius: 30px;
     border: 2px solid #FFFFFF;
@@ -86,9 +85,8 @@ body {
 }
 
 .btn-nav-daftar {
-    padding: 8px 20px 8px 20px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
     border-radius: 30px;
     background: #24A7FF;
@@ -726,7 +724,7 @@ body {
 /* Xiaomi Pad 7 Pro Landscape: 2368x1440px */
 @media only screen and (min-width: 768px) and (orientation: landscape) {
     .header--nav {
-        padding: 16px 50px 16px 50px;
+        padding: 22px 48px 22px 48px;
     }
 
     .footer--content {
