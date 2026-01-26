@@ -21,8 +21,7 @@
 
 <body>
     <header class="relative">
-        <nav
-            class="sticky top-0 z-30 flex flex-col lg:flex-row md:flex-row items-center justify-between header--nav">
+        <nav class="sticky top-0 z-30 flex flex-col lg:flex-row md:flex-row items-center justify-between header--nav">
             <div class="flex items-center flex-row space-x-4 md:space-x-8 mobile-nav gap-5 ">
                 <img src="./assets/images/fibrpos-white.png" alt="fibrpos logo" class="w-[150px] h-[39px] logo" />
                 <ul class="hidden md:hidden lg:flex space-x-8 font-semibold text-white menu-nav">
@@ -60,10 +59,10 @@
             <button id="close-mobile-menu" class="absolute top-6 right-6">&times;</button>
             <img src="./assets/images/fibrpos-blue.png" alt="fibrpos logo" class="w-[150px] h-[39px] logo mt-[20px]" />
             <a href="" class="scrolled-active">Beranda</a>
-            <a href="">Fitur</a>
-            <a href="">Solusi Bisnis</a>
-            <a href="">Ulasan</a>
-            <a href="">Layanan</a>
+            <a href="#feature">Fitur</a>
+            <a href="#solution">Solusi Bisnis</a>
+            <a href="#review">Ulasan</a>
+            <a href="#services">Layanan</a>
             <a href="https://wa.me/6285285999235?text=Halo%20tim%20FibrTIX!%20Saya%20membutuhkan%20bantuan%20terkait%20layanan%20di%20FibrTIX."
                 target="_blank" class="hover:text-[#ffc522]">Hubungi Kami</a>
         </div>
@@ -123,7 +122,7 @@
     </header>
 
     <!-- Stats & Features Section -->
-    <section class="relative bg-[#3051A0] lg:pb-32 pb-16">
+    <section class="relative bg-[#3051A0]">
         <!-- Stats Bar -->
         <div style="background-image: url('assets/images/bg-stats.png');">
             <div class="container mx-auto px-6 py-12 md:py-20">
@@ -157,23 +156,23 @@
         </div>
         <!-- Feature Highlight Section -->
         <div class="w-full container--features" id="feature">
-            <div class="bg-white rounded-[40px] p-8 lg:p-12 overflow-hidden">
-                <div class="flex flex-col lg:flex-row items-start"
-                    style="border: 1px solid #d1d5db; border-radius: 70px;">
+            <div class="bg-white rounded-t-[40px] p-4 lg:p-12 overflow-hidden">
+                <div
+                    class="flex flex-col lg:flex-row items-start lg:rounded-[70px] rounded-[40px] border border-gray-200">
                     <!-- Left: Phone Image -->
                     <div
-                        class="w-full lg:w-1/2 rounded-3xl flex items-center justify-center relative overflow-hidden h-[778px]">
+                        class="w-full lg:w-1/2 rounded-[40px] flex items-center justify-center relative overflow-hidden lg:h-[778px] h-[440px] mb-8 lg:mb-0">
                         <img src="./assets/images/feature-phone.png" alt="FibrPOS UI"
-                            class="w-full object-contain z-10 relative rounded-[3rem] h-[778px] pt-[50px]">
+                            class="w-[80%] lg:w-full object-contain z-10 relative lg:rounded-[3rem] h-full lg:h-[778px] pt-[40px] lg:pt-[50px]">
                     </div>
 
                     <!-- Right: Accordion -->
-                    <div class="w-full lg:w-1/2 pt-[50px]">
-                        <h2 class="text-3xl lg:text-[43px] font-semibold text-[#1F2937] leading-tight mb-4 pr-8">
+                    <div class="w-full lg:w-1/2 lg:pt-[50px] px-[20px]">
+                        <h2 class="text-[42px] font-bold text-[#1F2937] leading-tight mb-8 pr-4 text-left">
                             Kelola Data Penjualan, Lebih Mudah dengan <span class="text-[#24A7FF]">FibrPos</span>
                         </h2>
 
-                        <div class="mt-8 space-y-4 pr-[40px]" id="feature-accordion">
+                        <div class="mt-8 space-y-4 lg:pr-[40px]" id="feature-accordion">
                             <!-- Accordion Item 1 (Active by default) -->
                             <div class="accordion-item rounded-xl overflow-hidden active flex flex-col">
                                 <button
@@ -182,13 +181,11 @@
                                     <span class="text-[20px] font-semibold text-[#393D4E]">Template
                                         bisnis</span>
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg" class="hidden">
-                                        <path
-                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
-                                            fill="#393D4E" />
-                                        <path
-                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
-                                            fill="#393D4E" />
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="16" cy="16" r="15" stroke="#393D4E" stroke-width="2" />
+                                        <path d="M9 16H23" stroke="#393D4E" stroke-width="2" stroke-linecap="round" />
+                                        <path class="vertical-line hidden" d="M16 9V23" stroke="#393D4E"
+                                            stroke-width="2" stroke-linecap="round" />
                                     </svg>
 
                                 </button>
@@ -200,19 +197,18 @@
 
                             <!-- Accordion Item 2 -->
                             <div class="accordion-item">
+                                <div ></div>
                                 <button
-                                    class="w-full text-left px-6 py-1 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
+                                    class="w-full text-left px-6 py-4 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
                                     onclick="toggleAccordion(this)">
                                     <span class="text-[20px] font-semibold text-[#393D4E]">Kelola banyak
                                         toko dengan satu aplikasi</span>
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
-                                            fill="#393D4E" />
-                                        <path
-                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
-                                            fill="#393D4E" />
+                                        <circle cx="16" cy="16" r="15" stroke="#393D4E" stroke-width="2" />
+                                        <path d="M9 16H23" stroke="#393D4E" stroke-width="2" stroke-linecap="round" />
+                                        <path class="vertical-line" d="M16 9V23" stroke="#393D4E" stroke-width="2"
+                                            stroke-linecap="round" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content px-6 py-4 bg-gray-50 text-gray-600 hidden">
@@ -223,18 +219,16 @@
                             <!-- Accordion Item 3 -->
                             <div class="accordion-item">
                                 <button
-                                    class="w-full text-left px-6 py-1 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
+                                    class="w-full text-left px-6 py-4 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
                                     onclick="toggleAccordion(this)">
                                     <span class="text-[20px] font-semibold text-[#393D4E]">Kelola stok dan
                                         produk</span>
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
-                                            fill="#393D4E" />
-                                        <path
-                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
-                                            fill="#393D4E" />
+                                        <circle cx="16" cy="16" r="15" stroke="#393D4E" stroke-width="2" />
+                                        <path d="M9 16H23" stroke="#393D4E" stroke-width="2" stroke-linecap="round" />
+                                        <path class="vertical-line" d="M16 9V23" stroke="#393D4E" stroke-width="2"
+                                            stroke-linecap="round" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content px-6 py-4 bg-gray-50 text-gray-600 hidden">
@@ -245,18 +239,16 @@
                             <!-- Accordion Item 4 -->
                             <div class="accordion-item">
                                 <button
-                                    class="w-full text-left px-6 py-1 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
+                                    class="w-full text-left px-6 py-4 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
                                     onclick="toggleAccordion(this)">
                                     <span class="text-[20px] font-semibold text-[#393D4E]">Import data
                                         mudah</span>
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
-                                            fill="#393D4E" />
-                                        <path
-                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
-                                            fill="#393D4E" />
+                                        <circle cx="16" cy="16" r="15" stroke="#393D4E" stroke-width="2" />
+                                        <path d="M9 16H23" stroke="#393D4E" stroke-width="2" stroke-linecap="round" />
+                                        <path class="vertical-line" d="M16 9V23" stroke="#393D4E" stroke-width="2"
+                                            stroke-linecap="round" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content px-6 py-4 bg-gray-50 text-gray-600 hidden">
@@ -267,18 +259,16 @@
                             <!-- Accordion Item 5 -->
                             <div class="accordion-item">
                                 <button
-                                    class="w-full text-left px-6 py-1 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
+                                    class="w-full text-left px-6 py-4 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
                                     onclick="toggleAccordion(this)">
                                     <span class="text-[20px] font-semibold text-[#393D4E]">Catatan pesanan
                                         lengkap</span>
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
-                                            fill="#393D4E" />
-                                        <path
-                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
-                                            fill="#393D4E" />
+                                        <circle cx="16" cy="16" r="15" stroke="#393D4E" stroke-width="2" />
+                                        <path d="M9 16H23" stroke="#393D4E" stroke-width="2" stroke-linecap="round" />
+                                        <path class="vertical-line" d="M16 9V23" stroke="#393D4E" stroke-width="2"
+                                            stroke-linecap="round" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content px-6 py-4 bg-gray-50 text-gray-600 hidden">
@@ -289,18 +279,16 @@
                             <!-- Accordion Item 6 -->
                             <div class="accordion-item">
                                 <button
-                                    class="w-full text-left px-6 py-1 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
+                                    class="w-full text-left px-6 py-4 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
                                     onclick="toggleAccordion(this)">
                                     <span class="text-[20px] font-semibold text-[#393D4E]">Pembayaran QRIS
                                         dan cashless</span>
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
-                                            fill="#393D4E" />
-                                        <path
-                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
-                                            fill="#393D4E" />
+                                        <circle cx="16" cy="16" r="15" stroke="#393D4E" stroke-width="2" />
+                                        <path d="M9 16H23" stroke="#393D4E" stroke-width="2" stroke-linecap="round" />
+                                        <path class="vertical-line" d="M16 9V23" stroke="#393D4E" stroke-width="2"
+                                            stroke-linecap="round" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content px-6 py-4 bg-gray-50 text-gray-600 hidden">
@@ -311,18 +299,16 @@
                             <!-- Accordion Item 7 -->
                             <div class="accordion-item">
                                 <button
-                                    class="w-full text-left px-6 py-1 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
+                                    class="w-full text-left px-6 py-4 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
                                     onclick="toggleAccordion(this)">
                                     <span class="text-[20px] font-semibold text-[#393D4E]">Struk fisik dan
                                         digital</span>
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
-                                            fill="#393D4E" />
-                                        <path
-                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
-                                            fill="#393D4E" />
+                                        <circle cx="16" cy="16" r="15" stroke="#393D4E" stroke-width="2" />
+                                        <path d="M9 16H23" stroke="#393D4E" stroke-width="2" stroke-linecap="round" />
+                                        <path class="vertical-line" d="M16 9V23" stroke="#393D4E" stroke-width="2"
+                                            stroke-linecap="round" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content px-6 py-4 bg-gray-50 text-gray-600 hidden">
@@ -333,18 +319,16 @@
                             <!-- Accordion Item 8 -->
                             <div class="accordion-item">
                                 <button
-                                    class="w-full text-left px-6 py-1 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
+                                    class="w-full text-left px-6 py-4 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
                                     onclick="toggleAccordion(this)">
                                     <span class="text-[20px] font-semibold text-[#393D4E]">Report data
                                         penjualan lengkap</span>
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
-                                            fill="#393D4E" />
-                                        <path
-                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
-                                            fill="#393D4E" />
+                                        <circle cx="16" cy="16" r="15" stroke="#393D4E" stroke-width="2" />
+                                        <path d="M9 16H23" stroke="#393D4E" stroke-width="2" stroke-linecap="round" />
+                                        <path class="vertical-line" d="M16 9V23" stroke="#393D4E" stroke-width="2"
+                                            stroke-linecap="round" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content px-6 py-4 bg-gray-50 text-gray-600 hidden">
@@ -355,18 +339,16 @@
                             <!-- Accordion Item 9 -->
                             <div class="accordion-item mb-[20px]">
                                 <button
-                                    class="w-full text-left px-6 py-1 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
+                                    class="w-full text-left px-6 py-4 flex justify-between items-center text-gray-700 hover:text-blue-600 transition font-medium text-lg group"
                                     onclick="toggleAccordion(this)">
                                     <span class="text-[20px] font-semibold text-[#393D4E]">Manajemen
                                         karyawan</span>
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M16 0C7.17706 0 0 7.17706 0 16C0 24.8229 7.17706 32 16 32C24.8229 32 32 24.8217 32 16C32 7.17831 24.8229 0 16 0ZM16 29.5213C8.54531 29.5213 2.47869 23.4559 2.47869 16C2.47869 8.54406 8.54531 2.47869 16 2.47869C23.4547 2.47869 29.5213 8.54406 29.5213 16C29.5213 23.4559 23.4559 29.5213 16 29.5213Z"
-                                            fill="#393D4E" />
-                                        <path
-                                            d="M22.1973 14.6499H17.24V9.6925C17.24 9.00837 16.686 8.45312 16.0006 8.45312C15.3152 8.45312 14.7612 9.00837 14.7612 9.6925V14.6499H9.80383C9.11845 14.6499 8.56445 15.2051 8.56445 15.8893C8.56445 16.5734 9.11845 17.1286 9.80383 17.1286H14.7612V22.086C14.7612 22.7701 15.3152 23.3254 16.0006 23.3254C16.686 23.3254 17.24 22.7701 17.24 22.086V17.1286H22.1973C22.8827 17.1286 23.4367 16.5734 23.4367 15.8893C23.4367 15.2051 22.8827 14.6499 22.1973 14.6499Z"
-                                            fill="#393D4E" />
+                                        <circle cx="16" cy="16" r="15" stroke="#393D4E" stroke-width="2" />
+                                        <path d="M9 16H23" stroke="#393D4E" stroke-width="2" stroke-linecap="round" />
+                                        <path class="vertical-line" d="M16 9V23" stroke="#393D4E" stroke-width="2"
+                                            stroke-linecap="round" />
                                     </svg>
                                 </button>
                                 <div class="accordion-content px-6 py-4 bg-gray-50 text-gray-600 hidden">
@@ -685,15 +667,14 @@
         </div>
     </section>
     <!-- CTA Section Part (Seamlessly following Map) -->
-    <section class="bg-[#1D3468] relative">
+    <section class="bg-[#1D3468] relative p-[40px]">
         <div class="container mx-auto px-6 relative">
             <div class="flex flex-col lg:flex-row items-center justify-between">
                 <!-- Left Content -->
                 <div class="w-full lg:w-1/2 text-white mb-16 lg:mb-0 relative z-20">
-                    <h2 class="text-3xl lg:text-5xl font-bold leading-tight mb-8">
+                    <h2 class="text-[42px] lg:text-5xl font-bold leading-tight mb-8">
                         Cukup Satu <span class="text-[#24A7FF]">FibrPos</span><br>
-                        untuk Kebutuhan Bisnis<br>
-                        Anda.
+                        untuk Kebutuhan Bisnis Anda.
                     </h2>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="https://play.google.com/store/apps/details?id=io.appfibr.fibrtix" target="_blank"
@@ -724,81 +705,88 @@
     <!-- Footer Section -->
     <footer class="bg-[#3051A0] text-white relative z-20 footer--content text-[18px] text-white">
         <div class="container mx-auto px-6">
-            <!-- Logo Section -->
-            <div class="mb-12">
-                <img src="./assets/images/fibrpos-thick-orange.png" alt="fibrpos" class="h-8">
-            </div>
+            <div class="flex flex-col lg:flex-row justify-between mb-16 gap-10">
 
-            <!-- Content Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-16">
-                <!-- Column 1: Tentang -->
+                <!-- Column 1: Brand -->
+                <div class="lg:w-1/3">
+                    <div class="mb-6">
+                        <img src="./assets/images/fibrpos-thick-orange.png" alt="fibrpos" class="h-10">
+                    </div>
+                    <p class="text-white leading-relaxed max-w-sm mb-8 lg:mb-0">
+                        Aplikasi Point of Sale (POS) yang dirancang untuk memenuhi kebutuhan usaha kecil dan menengah
+                        (UKM) di Indonesia.
+                    </p>
+                </div>
+
+                <!-- Column 2: Tentang -->
                 <div>
-                    <h4 class="font-bold mb-6">Tentang</h4>
+                    <h4 class="font-bold mb-6 text-lg">Tentang</h4>
                     <ul class="space-y-4 font-normal">
-                        <li><a href="#" class="hover:text-white transition">Perusahaan</a></li>
-                        <li><a href="#" class="hover:text-white transition">Produk</a></li>
+                        <li><a href="#feature" class="hover:text-blue-200 transition">Fitur</a></li>
+                        <li><a href="#solution" class="hover:text-blue-200 transition">Solusi Bisnis</a></li>
+                        <li><a href="#review" class="hover:text-blue-200 transition">Ulasan</a></li>
+                        <li><a href="#services" class="hover:text-blue-200 transition">Layanan</a></li>
+                        <li><a href="https://wa.me/6285285999235?text=Halo%20tim%20FibrTIX!%20Saya%20membutuhkan%20bantuan%20terkait%20layanan%20di%20FibrTIX."
+                                target="_blank" class="hover:text-blue-200 transition">Hubungi Kami</a></li>
                     </ul>
                 </div>
 
-                <!-- Column 2: Karir -->
+                <!-- Column 3: Bantuan -->
                 <div>
-                    <h4 class="font-bold mb-6">Karir</h4>
+                    <h4 class="font-bold mb-6 text-lg">Bantuan</h4>
                     <ul class="space-y-4 font-normal">
-                        <li><a href="#" class="hover:text-white transition">Part - time</a></li>
-                        <li><a href="#" class="hover:text-white transition">Profesional</a></li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                            </svg>
+                            <a href="mailto:support@fibrcorp.io"
+                                class="hover:text-blue-200 transition">support@fibrcorp.io</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                            </svg>
+                            <a href="tel:+6281188810572" class="hover:text-blue-200 transition">+62 811 8881 0572</a>
+                        </li>
                     </ul>
                 </div>
 
-                <!-- Column 3: Artikel -->
+                <!-- Column 4: Social & Download -->
                 <div>
-                    <h4 class="font-bold mb-6">Artikel</h4>
-                    <ul class="space-y-4 font-normal">
-                        <li><a href="#" class="hover:text-white transition">Jurnal</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 4: Hubungi Kami -->
-                <div>
-                    <h4 class="font-bold mb-6">Hubungi Kami</h4>
-                    <ul class="space-y-4 font-normal">
-                        <li><a href="#" class="hover:text-white transition">Bantuan</a></li>
-                        <li><a href="#" class="hover:text-white transition">Lokasi</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 5: Social Media & Download -->
-                <div>
-                    <h4 class="font-bold mb-6">Social Media</h4>
+                    <h4 class="font-bold mb-6 text-lg">Social Media</h4>
                     <div class="flex gap-4 mb-8">
-                        <a href="#" class="hover:text-white transition">
-                            <img src="./assets/images/icons/icon-facebook.svg" alt="Facebook" class="w-6 h-6 object-contain">
-                        </a>
-                        <a href="#" class="hover:text-white transition">
-                            <img src="./assets/images/icons/icon-twitter.svg" alt="Twitter" class="w-6 h-6 object-contain">
-                        </a>
-                        <a href="#" class="hover:text-white transition">
-                            <img src="./assets/images/icons/icon-instagram.svg" alt="Instagram" class="w-6 h-6 object-contain">
-                        </a>
-                        <a href="#" class="hover:text-white transition">
-                            <img src="./assets/images/icons/icon-youtube.svg" alt="YouTube" class="w-6 h-6 object-contain">
-                        </a>
+                        <a href="#" class="hover:opacity-80 transition"><img
+                                src="./assets/images/icons/icon-facebook.svg" alt="Facebook"
+                                class="w-6 h-6 object-contain"></a>
+                        <a href="#" class="hover:opacity-80 transition"><img
+                                src="./assets/images/icons/icon-twitter.svg" alt="X" class="w-6 h-6 object-contain"></a>
+                        <a href="#" class="hover:opacity-80 transition"><img
+                                src="./assets/images/icons/icon-instagram.svg" alt="Instagram"
+                                class="w-6 h-6 object-contain"></a>
+                        <a href="#" class="hover:opacity-80 transition"><img
+                                src="./assets/images/icons/icon-youtube.svg" alt="YouTube"
+                                class="w-6 h-6 object-contain"></a>
                     </div>
+
                     <h4 class="font-bold mb-4">Download Aplikasi</h4>
-                    <div class="flex gap-2">
-                        <img src="./assets/images/icons/icon-playstore.svg" alt="Google Play" class="w-6 h-6">
-                        <img src="./assets/images/icons/icon-appstore.svg" alt="App Store" class="w-6 h-6">
+                    <div class="flex gap-3">
+                        <img src="./assets/images/icons/icon-playstore.svg" alt="Google Play" class="h-8">
+                        <img src="./assets/images/icons/icon-appstore.svg" alt="App Store" class="h-8">
                     </div>
                 </div>
+
             </div>
 
             <!-- Bottom Footer -->
             <div
-                class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white">
+                class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center text-sm font-light">
                 <div class="flex gap-6 mb-4 md:mb-0">
                     <a href="#" class="hover:text-white underline decoration-white/30">Kebijakan Privasi</a>
                     <a href="#" class="hover:text-white underline decoration-white/30">Syarat dan Ketentuan</a>
                 </div>
-                <p>Copyright ©2025 FibrPOS</p>
+                <p>Copyright © 2026 FibrPOS</p>
             </div>
         </div>
     </footer>
@@ -807,7 +795,6 @@
         function toggleAccordion(button) {
             const item = button.parentElement;
             const content = button.nextElementSibling;
-            const icon = button.querySelector('svg');
             const isActive = item.classList.contains('active');
 
             // Close all items
@@ -820,12 +807,9 @@
                 btn.classList.remove('bg-[#EFF6FF]', 'text-[#1F2937]', 'font-bold');
                 btn.classList.add('text-gray-700', 'font-medium');
 
-                // Show icon (make visible)
-                const icn = btn.querySelector('svg');
-                icn.classList.remove('hidden'); // Ensure visible
-                icn.classList.remove('rotate-180');
-                icn.classList.add('text-gray-400');
-                icn.classList.remove('text-[#1F2937]');
+                // Reset icon (Show vertical line -> Plus)
+                const verticalLine = btn.querySelector('.vertical-line');
+                if (verticalLine) verticalLine.classList.remove('hidden');
 
                 // Hide content
                 const cnt = accItem.querySelector('.accordion-content');
@@ -842,8 +826,9 @@
                 button.classList.remove('text-gray-700', 'font-medium');
                 button.classList.add('bg-[#EFF6FF]', 'text-[#1F2937]', 'font-bold');
 
-                // Hide icon
-                icon.classList.add('hidden'); // Hide when active
+                // Active icon (Hide vertical line -> Minus)
+                const verticalLine = button.querySelector('.vertical-line');
+                if (verticalLine) verticalLine.classList.add('hidden');
 
                 // Show content
                 content.classList.remove('hidden');
